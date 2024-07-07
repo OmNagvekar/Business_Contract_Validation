@@ -1,0 +1,1684 @@
+
+Technology License and Reseller Agreement - 3Com Corp. and Com21 Inc.
+
+TECHNOLOGY LICENSE AND RESELLER AGREEMENT
+
+
+This Technology License and Reseller Agreement is entered into by and
+between 3Com Corporation, a California corporation with a principal place of
+business at 5400 Bayfront Plaza, Santa Clara, California 95052 ('3Com'), and
+Com21, Inc., a Delaware corporation with a principal place of business at 1991
+Landings Drive, Mountain View, California 94043 ('Com2l'). The effective date of
+this Agreement shall be the date last executed below ('Effective Date').
+
+
+RECITALS
+
+A. Com2l and 3Com intend to enable and drive deployment of broadband
+services over Hybrid Fiber Coax (HFC) networks. The companies believe that
+combining the parties' respective core competencies will enable the faster
+introduction of HFC communications products to the market. Com2l's HFC
+experience coupled with 3Com networking experience and broad product offering
+will result in a more robust solution.
+
+B. Com2l or its suppliers are the owners of certain subscriber equipment
+technology related to broadband services over Hybrid Fiber Coax (HFC) networks,
+as more particularly described in Exhibit A (Com2l Technology).
+
+C. 3Com wishes to obtain a non-exclusive license for such technology in
+order to develop, manufacture and market cable modems based on the Com2l
+Technology. Com2l is willing to grant 3Com a technology license upon the terms
+and conditions set forth below.
+
+D. Com2l intends to develop a data over cable headend distribution
+system with assistance from 3Com. The first generation of such headend will
+comply with the Specifications (as defined below) attached to this Agreement as
+Exhibit B (Specifications). Com2l will permit 3Com to resell such headend on the
+terms and conditions set forth herein.
+
+E. The parties also envision that 3Com will make an equity investment in
+Com2l, under terms and conditions to be negotiated and documented in agreements
+separate from this Agreement.
+
+AGREEMENT
+
+NOW, THEREFORE, the parties agree as follows:
+
+1.      DEFINITIONS
+
+1.1 'Com2l Technology' means the Com2l first generation cable modem
+technology (known as 'P3' and to be defined in the Design Package) (excluding
+use of the expansion bus for optional plug-in modules) including, without
+limitation, system design, behavioral code,
+
+1
+
+
+
+
+
+ASICs and firmware, know-how, trade secrets rights, copyright rights, mask work
+rights and, if any, rights under Com21 Patents owned, acquired, developed by or
+licensed to Com21 and embodied in a cable modem product meeting the
+Specifications. Com21 Technology also includes the technology necessary to
+interface the 3Com Products to the Com21 Headend, and such other technology as
+described on Exhibit A (Com21 Technology).
+
+1.2 'Com21 Headend' means the headend controller unit to be developed by
+Com21, and all enhancements, upgrades and new versions thereof. The first
+generation Com21 Headend shall implement the Specifications as they exist as of
+the Effective Date together with such changes to the Specifications as the
+parties mutually agree in writing.
+
+1.3 'Specifications' means the document entitled 'The Com21 Community
+Protocol for HFC Networks, Revision 1.04 Branch 01 (V1.04.01), attached hereto
+as Exhibit B (Specifications) and to be included in the Design Package. Updates
+and revisions to the Specifications will be identified by a new branch index.
+3Com shall be provided reasonable notice of and be permitted to attend Com21's
+meetings regarding updates and/or revisions to the Specifications.
+
+1.4 'Com21 Mongoose Product' means Com21's modem ASIC (currently known
+as Mongoose) implementing the media access control and other modem functions,
+but excluding use of the expansion bus for optional plug-in modules, (i) as
+described in the Com21 modem design specification attached as Exhibit C (Com21
+Mongoose Product Specification), which specification may be changed from time to
+time by Com21, in its sole discretion, with written notice to 3Com and (ii)
+meeting certain criteria to determine the acceptability of the Com21 Mongoose
+Product to be agreed to by the parties, which criteria shall be set forth in a
+description attached to this Agreement as Exhibit D (Com21 Mongoose Product
+Acceptance Criteria). The Com21 Mongoose Product Specification shall be provided
+by Com21 within sixty (60) days of the Effective Date. The Com21 Mongoose
+Product Acceptance Criteria shall be mutually agreed to by the parties within
+sixty (60) days of the Effective Date.
+
+1.5 'Com21 P4 Product' means Com21's second generation modem ASIC
+(currently known as P4) implementing the media access control and other modem
+functions to be developed with AMD pursuant to a strategic partner relationship.
+
+1.6 'Com21 Patents' means all U.S. patents (and any foreign
+counterparts), pending patent applications and any reissues, continuations,
+divisions or extensions of such patents or applications, as to which Com21 is
+the patentee or as to which Com21 has the right to grant the license herein and
+which are necessary to practice the rights to the Com21 Technology, Com21
+Mongoose Product and Com21 Headend interfaces which are granted herein.
+
+1.7 'Confidential Information' means that information of either party
+('Disclosing Party') which is disclosed to the other party ('Receiving Party')
+pursuant to this Agreement,
+
+2
+
+
+
+
+
+in written form and marked 'Confidential' or if disclosed orally, the Disclosing
+Party shall indicate that such information is confidential at the time of
+disclosure and send a written summary of such information to the Receiving Party
+within thirty (30) days of disclosure and mark such summary 'Confidential.'
+Confidential Information shall include, but not be limited to, trade secrets,
+know-how, inventions, techniques, processes, algorithms, software programs,
+schematics, designs, contracts, customer lists, financial information, sales and
+marketing plans and business information. References to 3Com as a Receiving
+Party or a Disclosing Party shall also include all present and future subsidiary
+and parent companies of 3Com.
+
+1.8 'Design Package' means the information and materials necessary to
+develop cable modem products compatible with the Com21 Headend and the
+Specifications. As set forth in detail in Section 5 (Design Package), the
+description of the Design Package shall be attached to this Agreement as Exhibit
+E (Design Package) when it is completed.
+
+1.9 '3Com Patents' means all U.S. patents (and any foreign
+counterparts), pending patent applications and any reissues, continuations,
+divisions or extensions of such patents or applications, as to which 3Com is the
+patentee or as to which 3Com has the right to grant the license herein and which
+are necessary to practice the rights to the 3Com Technology which are granted
+herein.
+
+1.10 '3Com Product' means the cable modem products developed by 3Com
+under the terms of this Agreement. 'First Generation 3Com Product' means the
+first version of the commercially available low-cost data over cable 3Com
+Product developed by 3Com as described in Section 2.3(a)(iii), 'Derivative 3Com
+Products' means all 3Com Products other than the First Generation 3Com Product.
+
+1.11 '3Com Technology' shall mean the technology, including know-how,
+trade secrets, copyrights and, if any, 3Com Patents, owned, acquired or
+developed by or licensed to 3Com and embodied in the First Generation 3Com
+Product.
+
+2.      LICENSES
+
+2.1 Development and Manufacturing License. Subject to the terms and
+conditions of this Agreement, Com21 hereby grants to 3Com a non-exclusive,
+non-transferable, worldwide, royalty bearing license under the Com21 Technology
+and Com21 Mongoose Product to (a) design, develop, make or have made, use,
+market, sell, modify, lease and support 3Com Products, (b) design, develop, make
+or have made, use, market, sell, modify, lease and support derivative cable
+modem products based upon the 3Com Products, (c) sublicense its rights in the
+Com21 Technology embodied in the Com21 Mongoose Product only granted in (a)
+above, subject to the restrictions set forth in Section 2.3 (3Com Restrictions)
+below and (d) reproduce and translate the materials in the Design Package
+pursuant to the terms hereof as necessary for the exercise of the rights granted
+in clauses (a) and (b) of this Section 2.1 (Development and Manufacturing
+License).
+
+
+
+
+*Certain information on this page has been omitted and filed separately with the
+Commission. Confidential treatment has been requested with respect to the
+omitted portions.
+
+
+3
+
+
+
+
+
+2.2 Trademark License. Com21 hereby grants to 3Com a worldwide,
+nonexclusive, limited license to use the Com21 trademarks, and the respective
+stylistic marks, listed on Exhibit F (Com21 Trademarks) and such other mutually
+agreeable Com21 marks (collectively, the 'Com21 Trademarks') in conjunction with
+the distribution of the 3Com Products and in 3Com advertising, promotional and
+printed materials for the 3Com Products. 3Com has provided to Com21 a copy of
+the 3Com Trademark Guidelines. 3Com shall use the Com21 Trademarks in the manner
+specified in the 3Com Trademark Guidelines for proper usage of 3Com trademarks.
+The 3Com Trademark Guidelines may be modified from time to time by 3Com, in its
+sole discretion, with written notice of such modification to Com21. in the event
+Com21 implements its own trademark guidelines or policies, 3Com agrees to comply
+with such guidelines or policies. If compliance with a Com21 policy or guideline
+is not reasonably feasible, 3Com shall notify Com21 in writing and propose an
+alternative procedure for Com21's approval, which will not be unreasonably
+denied. Upon Com21's request, 3Com shall provide Com21 with free samples of the
+3Com advertising and promotional materials and reasonable numbers of the 3Com
+Product manufactured and distributed by 3Com on which such trademarks are used
+to ensure that Com21's quality standards are maintained.
+
+2.3    3Com Restrictions.
+
+(a) Notwithstanding the foregoing licenses granted to 3Com in
+this Section 2 (Licenses), (i) 3Com shall not have the right to sublicense to
+any third party (except to 3Com present and future subsidiaries) the Com21
+Technology licensed from Com21 before the second anniversary of the Effective
+Date or until the Com21 P4 Product is available, provided, however, Com21 agrees
+to support 3Com's discussions with third party manufacturers or vendors of
+physical layer semiconductors regarding the inclusion of the Com21 Technology,
+or any portion thereof, into such third party's products, (ii) until the third
+anniversary of the Effective Date, 3Com shall not sell or make available for
+sale as stand-alone products (i.e., not integrated into a card or system level
+product) semiconductor chips designed by or on behalf of 3Com based on the Com21
+Technology and (iii) 3Com will constrain the development and design of the First
+Generation 3Com Product to low-cost, data over cable modems based on the Com21
+Technology using RF technology compatible with the Com21 Headend.
+
+(b) As of the Effective Date, 3Com currently does not intend to
+enter the market for Headend Controller Units for the future foreseeable (no
+more than two years from the Effective Date). 3Com agrees to notify Com21 in
+writing within a reasonable time in the event 3Com decides (which decision shall
+be in 3Com's sole discretion) to begin development of a Headend Controller Unit.
+
+For purposes of this Section 2.3(b) only, 'Headend Controller Unit'
+shall mean that piece of equipment that physically connects the cable modem to
+the Headend via a hybrid fiber/coax or all coax network and is comprised of the
+following: Upstream and downstream physical layer connections, Media Access
+Controller (MAC), management interface that manages the MAC and physical layers
+and provides application management and traffic scheduling and interface to
+other equipment in the Headend.
+
+
+*Certain information on this page has been omitted and filed separately with the
+Commission. Confidential treatment has been requested with respect to the
+omitted portions.
+
+4
+
+
+
+
+
+For purposes of this Section 2.3(b) only, a 'Headend' shall mean the
+office/wiring equipment that is directly connected to the cable modem via a
+hybrid fiber/coax or all coax network. A Headend that is capable of offering
+data services can be comprised of the following equipment: Headend Controller
+Unit, switches, routers, network management, servers and other equipment that
+may be necessary or desirable to offer data services (such as hubs, adapters,
+and CSU/DSUs). The equipment outlined above may be in the form of separate
+systems connected together via standard or proprietary interfaces. Alternatively
+the functions may be contained in a single system or chassis comprised of cards
+or plug-in-modules.
+
+2.4 Com21 Restriction. Com21 currently intends for 3Com to be its
+primary cable modem Partner. As of the Effective Date, Com21 currently does not
+intend to enter into an agreement containing technology rights similar to the
+Com21 Technology rights granted in this Agreement with any other company for the
+future foreseeable (no more than two years from the Effective Date). Com21
+agrees to notify 3Com in writing within a reasonable time in the event 3Com
+decides (which decision shall be in Com21's sole discretion) to enter into such
+an agreement.
+
+2.5 3Com License to Com21. If Com21 desires, 3Com will grant to Com21 a
+non-exclusive, non-transferable, worldwide, royalty-bearing license under the
+3Com Technology to (a) make or have made, use, market, sell, modify, lease and
+support the First Generation 3Com Products and (b) design, develop, make or have
+made use, market, sell, modify, lease and support derivative cable modem
+products based upon the First Generation 3Com Products. Com21 shall pay to 3Com
+a reasonable royalty to be negotiated, and Sections 3.4 (Reports) and 4 (Payment
+Terms) shall apply to Com21 on a reciprocal basis. If Com21 desires, 3Com agrees
+to negotiate in good faith terms and conditions favorable to Com21 for Com21 to
+OEM the First Generation 3Com Product. Upon Com21's election of the license
+granted under this Section 2.5 (3Com License to Com21) and finalization of the
+terms of such license, 3Com shall provide to Com21 a design package comprising
+the information and materials necessary to develop the First Generation 3Com
+Product (the '3Com Design Package') and the parties shall work together in good
+faith to develop criteria to determine if such materials and information shall
+be deemed acceptable.
+
+2.6 No Other Licenses. Except as specifically and unambiguously set
+forth in this Agreement, no other licenses are granted by Com21 or 3Com to the
+other party.
+
+3.      LICENSE FEES, ROYALTIES AND REPORTS
+
+3.1 License Fee and Royalties. 3Com shall pay to Com21 the license fees
+and royalties as set forth in this Section 3.1 (License Fee and Royalties).
+
+(a) Provided Com21 delivers to 3Com the existing portions of the
+Design Package pursuant to Section 5.2 (Delivery) below, within thirty (30) days
+of the Effective Date, 3Com shall pay to Com21 a one-time license fee of One
+Million Dollars ($1,000,000).
+
+
+*Certain information on this page has been omitted and filed separately with the
+Commission. Confidential treatment has been requested with respect to the
+omitted portions.
+
+5
+
+
+(b) Concurrent with the payment described in Section 3.1(a), 3Com
+shall also pay to Com21 a pre-paid, non-refundable (except in the event of a
+refund pursuant to Section 5.4 (Remedies for Rejection and Termination) below)
+royalty of One Million Dollars ($1,000,000) for the first 100,000 units of the
+3Com Products to be sold by 3Com.
+
+(c) Until the earlier to occur of (i) the public availability of
+the Com21 P4 Product in production quantities or (ii) December 31, 1998, 3Com
+shall pay to Com21 a per unit royalty of [*] for units of 3Com Products for
+which royalties are due in excess of one hundred thousand (100,000) sold by
+3Com. Thereafter, no further royalties on 3Com Products shall be owed by 3Com to
+Com21.
+
+(d) Notwithstanding clauses (b) and (c) above, no royalty shall
+be due with respect to units of the 3Com Products for 3Com internal use, alpha
+or beta units, demonstration units, consigned units, repair or replacement of
+any 3Com Products, or the sale of spare parts on the performance of warranty
+work for any 3Com Products.
+
+3.2 Mongoose Availability. If, on or before August 31, 1996, the Com21
+Mongoose Product meeting the criteria to be agreed to by the parties and
+described in Exhibit C (Com21 Mongoose Product Specification) and Exhibit D
+(Com21 Mongoose Product Acceptance Criteria) is delivered by Com21 and which
+meets or is later found to meet the Com21 Mongoose Product Acceptance Criteria
+described in Exhibit D (Com21 Mongoose Product Acceptance Criteria), 3Com shall
+pay to Com21 within thirty (30) days of acceptance by 3Com an additional
+extended license fee of One Million Dollars ($1,000,000). If, after August 31,
+1996 but on or before December 31, 1996, the Com21 Mongoose Product meeting the
+criteria to be agreed to by the parties and described in Exhibit C (Com21
+Mongoose Product Specification) and Exhibit D (Com21 Mongoose Product Acceptance
+Criteria) is delivered by Com21 and which meets or is later found to meet the
+Com21 Mongoose Product Acceptance Criteria described in Exhibit D (Com21
+Mongoose Product Acceptance Criteria), said license fee shall be Five Hundred
+Thousand Dollars ($500,000). If said Com21 Mongoose Product meeting said
+criteria is not delivered by Com21 until January 1, 1997 or later, 3Com shall
+not be obligated to make any license fee pursuant to this Section 3.2 (Mongoose
+Availability); however, Com21 shall remain obligated to provide the Com21
+Mongoose Product as provided this Agreement. Com21 shall provide 3Com a
+reasonable number of samples of the Com21 Mongoose Product (including but not
+limited to behavioral code) as it exists as of August 31, 1996 (regardless of
+whether the Com21 Mongoose Product meets said criteria) and as it exists as of
+the other dates set forth in this Section 3.2 (Mongoose Availability) until it
+meets said criteria. 3Com agrees that COM 21 shall have no obligation to make
+any modification or enhancement to the Com21 Mongoose Product to accommodate any
+change in the 3Com Product.
+
+3.3 Most Favored Customer. Com21 represents and warrants that at the
+date of this Agreement the license fees set forth herein do not exceed those
+charged to any other customer of Com21 licensing the Com21 Technology or
+technology similar or equivalent thereto. If at any time, Com21 offers lower
+prices to any other customer for such similar or equivalent technology on
+similar terms or on terms less favorable to Com21, taken as whole, Com21 shall
+immediately
+
+
+
+
+
+*Certain information on this page has been omitted and filed separately with the
+Commission. Confidential treatment has been requested with respect to the
+omitted portions.
+
+
+6
+
+
+
+
+
+
+
+
+
+notify 3Com and offer such more favorable license fees to 3Com effective as of
+the date such prices were offered to such other customer.
+
+3.4 Reports. 3Com shall keep adequate records to verify all reports and
+payments to be made to Com21 pursuant to this Agreement for a period of three
+(3) years following the date of such reports and payments. Com21 shall have the
+right to select an independent certified public accountant mutually agreeable to
+the parties, whose fees are not contingent on the results of the inspection and
+who agrees in writing to maintain the confidentiality of the information
+provided to it, to inspect no more frequently than annually the records of 3Com
+on reasonable notice and during regular business hours to verify the reports and
+payments required hereunder. If such inspection should disclose any
+underpayment, 3Com shall promptly pay Com21 such amount. The entire cost of such
+inspection shall be borne by Com21; provided, however, that if 3Com is
+determined by such audit to have underpaid royalties by five percent (5%) or
+more, then the reasonable cost of such audit shall be home by 3Com.
+
+4.      PAYMENT TERMS
+
+4.1 Payment. Per-unit royalties under Section 3.1(c) above shall accrue
+upon shipment to a customer of 3Com Products by 3Com and shall be payable
+quarterly, within thirty (30) days after the first day of the month following
+the 3Com fiscal quarter in which royalties accrued. Each royalty payment shall
+be accompanied by a statement of all units shipped during the relevant period
+for which a royalty is due. Payments and statements shall be sent to Com21 at
+the address set forth at the beginning of this Agreement or such other address
+as Com21 may designate in writing.
+
+4.2 Taxes. In addition to any other payments due under this Agreement,
+3Com agrees to pay, indemnify and hold Com21 harmless from any sales, use,
+excise, import or export, value added or similar tax or duty, any other tax not
+based on Com21's net income, and all governmental permit fees, license fees,
+customs fees and similar fees which Com21 may incur in respect of this
+Agreement.
+
+5.      DESIGN PACKAGE
+
+5.1 Definition of Design Package. Promptly following the Effective Date,
+the parties shall work together to determine and describe the materials and
+information necessary to develop cable modem products compatible with the Com21
+Headend and the Specifications, and the criteria to determine if such materials
+and information shall be deemed acceptable. The description of the Design
+Package shall be attached to this Agreement as Exhibit E (Design Package) when
+it is completed. Com21 shall provide 3Com with updated versions of the Design
+Package as it evolves during the course of design reviews by the parties.
+
+5.2 Delivery. On the Effective Date, Com21 shall deliver to 3Com all
+then existing portions of the Design Package. In addition, Com21 shall use
+commercially reasonable efforts to provide 3Com with the deliverables described
+in the Design Package in accordance with the
+
+7
+
+
+
+
+
+milestone schedule set forth therein. Because Com21's performance is dependent
+in part on 3Com's performance, any dates or time periods relevant to performance
+by Com21 hereunder shall be appropriately and equitably extended to account for
+any delays due to 3Com.
+
+5.3 Acceptance. 3Com shall have twenty (20) days after receipt of each
+deliverable in the Design Package (the 'Acceptance Period') to examine such
+deliverable to determine that it substantially conforms with the Specifications
+in Exhibit B (Specifications) and as described in Exhibit A (Com21 Technology).
+3Com may reject a deliverable only if the deliverable fails in some material
+respect to meet the Specifications in Exhibit B (Specifications) and as
+described in Exhibit A (Com21 Technology). 3Com shall promptly notify Com21 if
+it rejects such deliverable with a written summary of the reason for rejection.
+If no written rejection is received by Com21 within the Acceptance Period, such
+deliverable shall be deemed accepted. Should the delivery of the deliverable be
+rejected by 3Com, Com21 shall use commercially reasonable efforts to correct the
+deliverable to conform with the associated specifications and redeliver such
+corrected deliverable to 3Com within twenty (20) days of receipt of rejection.
+3Com will have twenty (20) days after receipt of the redelivered deliverable to
+accept the deliverable. The foregoing acceptance/rejection/correction provisions
+shall apply to a redelivered deliverable, provided, however, that upon the third
+or any subsequent rejection, either party may terminate this Agreement by thirty
+(30) days notice unless the deliverable is accepted during the notice period.
+Com21 shall not be obligated to correct any failure caused by something other
+than the deliverable.
+
+5.4 Remedies for Rejection and Termination. If this Agreement is
+terminated pursuant to Section 5.3 (Acceptance) above, the parties agree to
+negotiate in good faith the effect of such termination with respect to the
+refund by Com21 of any amounts already paid by 3Com under Section 3 (License
+Fees, Royalties and Reports) above, the portions of the Design Package, if any,
+to be retained by 3Com and 3Com's right, if any, in such Design Package portions
+and license fees in connection therewith. If the parties fail to agree on such
+terms within thirty (30) days of the effective date of termination, Com21 shall
+refund all amounts already paid by 3Com under Section 3 (License Fees, Royalties
+and Reports) and 3Com shall have no rights in the Com21 Technology, the Com21
+Mongoose Product or the Design Package.
+
+6.      SUPPORT
+
+6.1 Design Support. Com21 will provide 3Com with a reasonable number of
+man-hours of Com21 R&D, manufacturing and quality assurance engineers for
+support by telephone, fax or if requested by 3Com, at 3Com Santa Clara site,
+provided Com21's current timetable for commercialization is not adversely
+impacted. Com21 and 3Com shall designate representatives to serve as contacts
+for such support. If additional support is requested by 3Com, Com21 shall
+provide, at Com21's sole discretion, such service at reasonable times and places
+and at a rate equal to Com21's then current standard fee therefor (currently
+[$150]/hour at Com21 facilities). Com21 shall provide 3Com with reasonable
+advance notice of Com21 design reviews relating to Com21 cable modem products
+and permit a 3Com representative to attend.
+
+
+
+
+
+*Certain information on this page has been omitted and filed separately with the
+Commission. Confidential treatment has been requested with respect to the
+omitted portions.
+
+
+
+8
+
+
+
+
+
+
+
+
+6.2 Customer Support. The parties agree to work together to develop and
+facilitate the call handling processes to provide seamless customer support and
+technical service to end users and service providers. Each party shall be solely
+responsible for support of its products.
+
+6.3 3Com Support.
+
+3Com shall provide Com21 with a reasonable number of man-hours of the
+following types of assistance:
+
+(a)    Chip design expertise;
+
+(b)    DVT facilities;
+
+(c)    Physical layer certification assistance;
+
+(d)    ATM switching technology;
+
+(e)    Network management;
+
+(f)    Low-cost volume manufacturing expertise; and
+
+(g)    Other consulting advice.
+
+Com21 shall provide to 3Com all the necessary technology to interface the 3Com
+Products to the Com21 Headend.
+
+7.      MARKETING
+
+3Com and Com21 intend to jointly develop a marketing campaign to successfully
+promote communication over HFC and remove adoption barriers for both MSOs and
+end users. 3Com and Com21 shall jointly promote the Specifications to drive
+industry standards. The parties envision that they initially would both market
+the 3Com Product. The parties will work together to leverage their respective
+relationships with MSOs to establish the superiority of the system solution they
+jointly develop. The parties will work together to include each other products,
+as appropriate and applicable, in their respective advertising, public relations
+activities, tradeshows, product literature and manuals, and World Wide Web
+sites.
+
+8.      STANDARDS
+
+The parties acknowledge and agree that it is in their mutual interests to
+promote the 'The UPSTREAMS Protocol for HFC Networks' proposal, based on IEEE
+802 contribution IEEE P802.14/95-152R1 (the 'Proposal') including subsequent
+revisions, generated as required to promote acceptance in the standards bodies,
+and ATM Forum contribution ATMF/95-1435R1, for acceptance in industry standards
+with relevant standards bodies. The parties shall use
+
+9
+
+
+
+
+
+
+
+reasonable efforts to collaborate on such promotion.
+
+The parties further agree that other companies or consortia may participate in
+efforts to promote the Proposal, as needed to build consensus within the
+relevant standards bodies, and that additional contributors shall not be
+precluded from being added to The Proposal in the future.
+
+The Proposal shall be made freely available, but intellectual property rights
+(including, without limitation, patent rights) included or referenced in the
+Proposal shall be released or licensed in accordance with the policies of the
+relevant standards body. Each shall retain all ownership of and title to
+intellectual property rights in contributions it makes to the Proposal.
+
+9.      COM21 HEADEND DEVELOPMENT AND RESALE BY 3COM
+
+9.1 Development. Com21 shall use commercially reasonable efforts to
+design and develop the first generation Com21 Headend in accordance with a
+mutually agreeable schedule. The parties agree to meet to discuss the status and
+direction of Com21's design and development of the Com21 Headend and to assess
+how 3Com could assist to accelerate and enhance such design and development.
+
+9.2 Resale by 3Com. The parties agree that 3Com shall be permitted to
+resell the Com21 Headend pursuant to the terms and conditions of a reseller
+agreement, entitled 'Headend Distribution Agreement', to be agreed upon and
+entered into by the parties. Com21 shall escrow the designs for the Com21
+Headend for release to enable 3Com to manufacture the Com21 Headend under
+certain conditions as more specifically set forth in the Technology Escrow and
+Manufacturing License, attached hereto as Exhibit G, (Technology Escrow and
+Manufacturing License), to be incorporated into and made a part of the Headend
+Distribution Agreement.
+
+9.3 Com21 Headend Integration within 3Com Platform. The parties agree to
+work together to develop by December 31, 1996 a mutually agreeable plan (a) to
+make the Com21 Headend compatible for integration within a 3Com platform such as
+the Trinity or ONcore architectures (which architecture shall be designated by
+3Com) or (b) to provide the necessary technology and specifications for such
+integration. The parties agree that they shall perform such plan.
+
+10.0    3COM NIC TECHNOLOGY
+
+3Com shall develop certain network interface card (NIC) technology and
+make products incorporating such technology available to Com21 on mutually
+agreeable terms as follows:
+
+10.1 Low-Cost NICS. 3Com shall provide a low cost network interface card
+(NIC) to be independently resold by Com21 and 3Com. This NIC would enable PC
+users to connect a cable modem to their PCs. 3Com intends to develop the needed
+software to make the installation relatively easy and user friendly.
+
+10
+
+
+
+
+
+
+10.2 NIC Drivers. 3Com shall develop NIC PC drivers to enable high
+performance and efficient communication between the 3Com Products and the PC.
+This could utilize 3Com technology such as the PACE technology.
+
+10.3 Management Software. 3Com shall develop software to enable remote
+configuration and management of PC parameters over the HFC infrastructure such
+as AMP and DRMON.
+
+11.     PROPRIETARY RIGHTS
+
+11.1 Title. Com21 shall be the sole and exclusive owner of the Design
+Package, Com21 Technology, Com21 Headend, Com21 Mongoose Product, all
+modifications and derivative works (produced by Com21) thereof, the Com21
+Trademarks and all proprietary and intellectual property rights therein
+throughout the world. Except for the Design Package, Com21 Technology, Com21
+Headend and Com21 Mongoose Product, modifications and derivative works (produced
+by Com21) thereof and the Com21 Trademarks embodied in the First Generation 3Com
+Product, 3Com shall be the sole and exclusive owner of the 3Com Technology and
+other technology embodied in the 3Com Products. 3Com agrees to sell to Com21 for
+resale as a Com21 branded product any 3Com Product embodying a modification or
+derivative work (produced by 3Com) of the Design Package, Com21 Technology or
+Com21 Mongoose Product at prices that are not higher than those 3Com charges any
+other customer of such product or product containing similar or equivalent
+technology at similar volumes. Technology that is made, conceived of or reduced
+to practice by the parties jointly in the course of development under this
+Agreement shall be jointly owned, without accounting to each other, both parties
+having the right to design, develop, make or have made, use, market, sell,
+modify, sublicense, lease and support products using the technology arising out
+of or obtained with respect to such joint development. To the extent necessary
+to bring about the joint ownership of the jointly developed technology, each
+party hereby assigns to the other party an undivided ownership interest in their
+respective technology in the jointly developed technology. Each party shall use
+reasonable efforts to enable the other to use third party technology
+incorporated into the Com21 Technology and/or the Com21 Mongoose Product (in the
+case of Com21) or the 3Com Technology (in the case of 3Com) under terms and
+conditions similar to the terms and conditions such party has received from said
+third parties, whether by means of a sublicense or directly from the third
+party.
+
+11.2 Patents. Except as otherwise provided below, 3Com agrees at its
+election and own expense (i) to file in the United States Patent and Trademark
+Office (the 'PTO') applications ('Applications') for Letters Patents covering
+the jointly developed technology, (ii) to diligently prosecute the Applications
+and (iii) to maintain in force any patents issuing therefrom. 3Com agrees to
+promptly supply Com21 with a complete copy of each Application and all
+communications received from, or sent to, the PTO concerning the Applications.
+3Com agrees to submit to Com21 for consideration and advice all responses to PTO
+communications before filing them, and to give due consideration to Com21's
+advice with respect to such responses. The filing and prosecution of foreign
+patent applications shall be subject to mutual agreement of the
+
+11
+
+
+
+
+
+
+parties. If, 3Com elects not to seek patent protection for any invention of the
+jointly developed technology, 3Com shall so notify Com21 in writing and Com21
+may, in its sole discretion and at its sole expense, file an Application for
+Letters Patent covering such invention and Com21 agrees to diligently prosecute
+all such Applications it elects to file. If, at any time, 3Com intends to allow
+any Application or any patent lapse, become abandoned or forfeited without
+having first filed a substitute, 3Com shall (a) notify Com21 in writing of its
+intention at least sixty (60) days before the date on which the application or
+patent is due to lapse or become abandoned or forfeited and (b) if requested by
+Com21, promptly assign the entire right, title and interest in and to that
+application or patent to Com21. Com21 shall be under no obligation to prosecute
+or maintain in force any application or patent assigned to it, provided Com21
+shall notify 3Com in writing of its intention not to prosecute or maintain any
+such application or patent at least sixty (60) days before the date on which the
+application or patent is due to lapse or become abandoned or forfeited.
+
+11.3 Notices. Each party agrees that it will cause to appear on the
+container or label for each unit of the products manufactured hereunder
+appropriate patent and copyright notices and proprietary data legends as
+contained in the Design Package or Com21 Technology delivered by Com21 or First
+Generation 3Com Product or 3Com Technology delivered by 3Com, as the case may
+be, pursuant to this Agreement or as otherwise reasonably required by the other
+party.
+
+12.     WARRANTY
+
+12.1 Com21 Warrant. Com21 warrants to 3Com that for a period of ninety
+(90) days after receipt by 3Com of the Design Package (the 'Warranty Period')
+the media on which Com21 delivers the Design Package to 3Com shall be free of
+defects in material and workmanship. Com21 shall replace any such defective
+media promptly following receipt of written notice from 3Com of such defects
+during the Warranty Period. Com21 further represents and warrants to 3Com that
+the Com21 Technology and materials contained in the Design Package provided to
+3Com will be sufficient to permit 3Com (assuming 3Com has R&D and manufacturing
+skill and know-how typical of manufacturers of computer products similar to
+cable modem products) to develop the 3Com Product to be compatible with the
+Com21 Headend and to conform in all material respects to the Specifications.
+EXCEPT FOR THE FOREGOING LIMITED WARRANTIES AND AS SET FORTH IN SECTION 13
+(INDEMNIFICATION), COM21 MAKES NO WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, AS
+TO ANY MATTER WHATSOEVER. IN PARTICULAR, ANY AND ALL WARRANTIES OF
+MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE ARE EXPRESSLY EXCLUDED.
+
+12.2 3Com Warranty to Com21. 3Com warrants to Com21 that for a period of
+ninety (90)days after receipt by Com21 of the 3Com Design Package (the '3Com
+Warranty Period') the media on which 3Com delivers the 3Com Design Package to
+Com21 shall be free from defects in material and workmanship. 3Com shall replace
+any such defective media promptly following receipt of written notice from Com21
+of such defects during the 3Com Warranty Period. 3Com further represents and
+warrants to Com21 that the 3Com Technology and materials contained in
+
+12
+
+
+
+
+
+
+
+the 3Com Design Package provided to Com21 will be sufficient to permit Com21
+(assuming Com21 has R&D and manufacturing skill and know-how typical of
+manufacturers of computer products similar to cable modem products) to develop
+the First Generation 3Com Product. EXCEPT FOR THE FOREGOING LIMITED WARRANTIES
+AND AS SET FORTH IN SECTION 13 (INDEMNIFICATION), 3COM MAKES NO WARRANTIES,
+EXPRESS, IMPLIED OR STATUTORY, TO COM21 AS TO ANY MATTER WHATSOEVER. IN
+PARTICULAR, ANY AND ALL WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE ARE EXPRESSLY EXCLUDED.
+
+12.3 Customer Warranty . Each party shall be solely responsible for
+customer warranty of any and all products manufactured by such party pursuant to
+this Agreement.
+
+13.     INDEMNIFICATION
+
+13.1 Com21 Indemnification of 3Com. Com21 shall indemnify and hold
+harmless 3Com, its officers, directors, employees and agents against any claims,
+actions or demands alleging that the Com21 Technology, Com21 Mongoose Product or
+Design Package, including all updates thereto (if any) provided to 3Com by
+Com21, infringe on any U.S. copyrights, U.S. patents, trade secrets or other
+proprietary rights of any third parties.
+
+(a) This obligation is contingent upon (i) 3Com giving prompt
+written notice to Com21 of any such claim, action or demand, (ii) 3Com
+allowing Com21 to control the defense and related settlement
+negotiations and (iii) 3Com fully assisting, at Com21 expense, in the
+defense.
+
+(b) Com21 shall have no obligation hereunder for any such claims,
+actions or demands to the extent such claims, actions or demands result
+from:
+
+(1) The 3Com Product, or portions or components thereof, made in
+accordance with 3Com's specifications; or
+
+(2) Com21 Technology, Com21 Mongoose Product or Design Package
+combined with processes, materials or products not supplied, created, developed
+licensed by Com21; or
+
+(3) The modification or attempted modification of the Com21
+Technology, Com21 Mongoose Product or Design Package by parties other than Com21
+or the use or distribution of such modified Com21 Technology, Com21 Mongoose
+Product or Design Package or
+
+(4) 3Com's continued alleged infringing activity after being
+notified thereof or after being informed of modifications that would have
+avoided the infringement.
+
+THE FOREGOING STATES 3COMS SOLE AND EXCLUSIVE REMEDY WITH
+
+13
+
+
+
+
+
+
+
+RESPECT TO CLAIMS OF INFRINGEMENT OF PROPRIETARY RIGHTS OF ANY KIND.
+
+13.2 3Com Indemnification of Com21. 3Com shall indemnify and hold
+harmless Com21, its officers, directors, employees and agents against any
+claims, actions or demands alleging that the First Generation 3Com Products or
+3Com Technology infringe on any U.S. copyrights, U.S. patents, trade secrets or
+other proprietary rights of any third parties.
+
+(a) This obligation is contingent upon (i) Com21 giving prompt
+written notice to 3Com of any such claim, action or demand, (ii) Com21 allowing
+3Com to control the defense and related settlement negotiations and (iii) Com21
+fully assisting, at 3Com expense, in the defense.
+
+(b) 3Com shall have no obligation hereunder for any such claims,
+actions or demands to the extent such claims, actions or demands result from:
+
+(1) The Com21 Technology, Com21 Mongoose Product or Design
+Package, unless (i) the 3Com Product, or portion or component thereof,
+is made in whole or in part in accordance with 3Com's specifications or
+(ii) Com21 technology, Com21 Mongoose Product or Design Package is
+combined with materials, processes or products not supplied, created,
+developed or licensed by Com21;
+
+or
+
+(2) The modification or attempted modification of the
+First Generation 3Com Product or 3Com Technology by parties other
+than 3Com or the use or distribution of such modified First
+Generation 3Com Product or 3Com Technology
+or
+
+(3) Com21's continued alleged infringing activity after
+being notified thereof or after being informed of modifications
+that would have avoided the infringement.
+
+THE FOREGOING STATES COM21'S SOLE AND EXCLUSIVE REMEDY WITH RESPECT TO CLAIMS OF
+INFRINGEMENT OF PROPRIETARY RIGHTS OF ANY KIND.
+
+14.     CONFIDENTIALITY
+
+14.1 Confidential Information. Each party acknowledges that in the
+course of the performance of this Agreement, it may obtain the Confidential
+Information of the other party. The Receiving Party (as defined in Section 1.7
+(Confidential Information)) shall, at all times, both during the term of this
+Agreement and thereafter for a period of [*], keep in confidence and trust all
+of the Disclosing Party's (as defined in Section 1.7 (Confidential Information))
+Confidential Information received by it. The Receiving Party shall not use the
+
+14
+
+
+
+*Certain information on this page has been omitted and filed separately with the
+Commission. Confidential treatment has been requested with respect to the
+omitted portions.
+
+
+
+
+
+
+Confidential Information of the Disclosing Party other than as expressly
+permitted under the terms of this Agreement or by a separate written agreement.
+The Receiving Party shall take all reasonable steps to prevent unauthorized
+disclosure or use of the Disclosing Party's Confidential Information and to
+prevent it from failing into the public domain or into the possession of
+unauthorized persons. The Receiving Party shall not disclose Confidential
+Information of the Disclosing Party to any person or entity other than its
+officers, employees, consultants and subsidiaries who need access to such
+Confidential Information in order to effect the intent of this Agreement and who
+have entered into written confidentiality agreements which protect the
+Confidential Information of the Disclosing Party. The Receiving Party shall
+immediately give notice to the Disclosing Party of any unauthorized use or
+disclosure of Disclosing Party's Confidential Information. The Receiving Party
+agrees to assist the Disclosing Party to remedy such unauthorized use or
+disclosure of its Confidential Information.
+
+14.2 Exceptions to Confidential Information. The obligations set forth
+in Section 14.1 (Confidential Information) shall not apply to the extent that
+Confidential Information includes information which (a) is already known to the
+Receiving Party at the time of disclosure, which knowledge the Receiving Party
+shall have the burden of proving; (b) is, or, through no act or failure to act
+of the Receiving Party, becomes publicly known; (c) is received by the Receiving
+Party from a third party without restriction on disclosure; (d) is independently
+developed by the Receiving Party without reference to the Confidential
+Information of the Disclosing Party, which independent development the Receiving
+Party will have the burden of proving; (e) is approved for release by written
+authorization of the Disclosing Party; or (f) is required to be disclosed by a
+government agency to further the objectives of this Agreement or by a proper
+order of a court of competent jurisdiction; provided, however that the Receiving
+Party will use its reasonable efforts to minimize such disclosure and will
+consult with and assist the Disclosing Party in obtaining a protective order
+prior to such disclosure.
+
+14.3 Remedies. Each party acknowledges and agrees that any breach of
+this Section 14 (Confidentiality) by a party's unauthorized use or disclosure of
+the Com21 Technology, the 3Com Technology or the Design Package, as the case may
+be, would cause irreparable injury to the other party for which monetary damages
+are not an adequate remedy. Accordingly, in addition to other available
+remedies, the non-breaching party will be entitled to obtain appropriate
+injunctive relief and other equitable remedies in the event of such breach.
+
+15.     LIMITATION OF LIABILITY
+
+EXCEPT FOR A BREACH OF SECTION 14 (CONFIDENTIALITY), NEITHER PARTY SHALL
+HAVE ANY LIABILITY FOR INCIDENTAL, CONSEQUENTIAL, INDIRECT, SPECIAL OR PUNITIVE
+DAMAGES OR LIABILITIES OF ANY KIND OR FOR LOSS OF REVENUE, LOSS OF BUSINESS OR
+OTHER FINANCIAL LOSS OR FOR ANY COST OF PROCUREMENT OF SUBSTITUTE GOODS,
+SERVICES OR TECHNOLOGY ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT,
+INCLUDING WITHOUT LIMITATION IN CONNECTION WITH THE MANUFACTURE, SALE,
+INSTALLATION, USE, PERFORMANCE, FAILURE OR
+
+15
+
+
+
+
+
+
+
+INTERRUPTION OF THE PRODUCT(S) LICENSED HEREUNDER, REGARDLESS OF THE FORM OF THE
+ACTION, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE) STRICT PRODUCT
+LIABILITY OR OTHERWISE, EVEN IF ANY REPRESENTATIVE OF A PARTY HERETO HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+16.     EXPORT CONTROLS
+
+Each party agrees that it will not knowingly, without prior
+authorization, if required, of the Office of Export Administration, U.S.
+Department of Commerce 14th and Constitution Ave., N.W., Washington, D.C. 20230,
+export or reexport (as defined in Section 779.1(b)-(c) of the Export
+Administration Regulations - 'Regulations' - and any amendments thereto) the
+technical data relating to the Com21 Mongoose Product, Com21 Headend, 3Com
+Product, Com21 Technology or 3Com Technology or the direct products of such
+technical data to Afghanistan, the People's Republic of China or to any Group Q,
+S, W, Y or Z country specified in Supplement No. 1 to Section 770 of the
+Regulations as amended from time to time.
+
+17.     TERM AND TERMINATION
+
+17.1 Term. This Agreement shall be effective from the Effective Date for
+a period of five (5) years, unless earlier terminated in accordance with its
+terms. Thereafter, this Agreement shall automatically be renewed on its
+anniversary dates for successive one (1) year terms subject to a party providing
+written notice to the other party no later than sixty (60) days prior to any
+such anniversary date of such party's intent not to renew in which event this
+Agreement shall terminate at the end of the then current term; provided that, in
+the event of Com21's failure to renew, the Licenses granted to 3Com under
+Section 2 (Licenses) above shall continue in full force in perpetuity.
+
+17.2 Termination Due to Bankruptcy, etc. In the event a party (i)
+becomes insolvent; (ii) voluntarily files a petition under applicable bankruptcy
+or insolvency laws which such party fails to have released within thirty (30)
+days after filing, (iii) has filed against it a petition under applicable
+bankruptcy or insolvency laws which such party fails to have released within
+ninety (90) days (thirty (30) days if such party fails to contest the petition
+in good faith) after filing; (iv) proposes any dissolution, composition or
+financial reorganization with creditors or if a receiver, trustee, custodian or
+similar agent is appointed or takes possession with respect to all or
+substantially all property or business of such party; or (v) such party makes a
+general assignment for the benefit of creditors, the other party may terminate
+this Agreement by giving a termination notice, which termination shall become
+effective ten (10) days after mailing.
+
+17.3 Right to Terminate. Either party shall have the right to terminate
+this Agreement if the other party is in material breach of any term or condition
+of this Agreement and fails to remedy such breach within thirty (30) days
+(twenty (20) days in the case of a
+
+16
+
+
+
+
+
+
+
+breach of a payment obligation) after receipt of written notice of such breach
+given by the non-breaching party; provided, however, that a breach of the
+obligations set forth in Section 14 (Confidentiality) shall be grounds for
+immediate termination by the non-breaching party of this Agreement.
+
+17.4 Obligations Upon Termination caused by 3Com Breach. Upon the
+termination of this Agreement caused by 3Com's material breach of this
+Agreement:
+
+(a) 3Com's obligations to pay all sums due hereunder shall be
+accelerated and all such sums shall be due and payable on the date of
+termination or expiration;
+
+(b) The licenses granted to 3Com hereunder shall terminate and
+3Com shall discontinue the use, manufacture, reproduction, distribution and
+sublicensing (as applicable of the Com21 Technology, Com21 Mongoose Product and
+Design Package licensed from Com21;
+
+(c) 3Com may keep one (1) copy of the Com21 Technology, Com21
+Mongoose Product and Design Package to be used solely for support of its
+installed base of 3Com Products and 3Com shall have a limited license to the
+extent necessary for 3Com to support the installed base of 3Com Products.
+
+17.5 Obligations Upon Termination caused by Com21 Breach. Upon the
+termination of this Agreement caused by Com21's material breach of this
+Agreement:
+
+(a) Com21's obligations to pay all sums due hereunder shall be
+accelerated and all such sums shall be due and payable on the date of
+termination or expiration;
+
+(b) The licenses granted to Com21 hereunder shall terminate and
+Com21 shall discontinue the use, manufacture, reproduction, distribution and
+sublicensing (as applicable) of the 3Com Technology and First Generation 3Com
+Product licensed from 3Com;
+
+(c) Com21 may keep one (1) copy of the 3Com Technology and First
+Generation 3Com Product to be used solely for support of its installed base of
+First Generation 3Com Products and Com21 shall have a limited license to the
+extent necessary for Com21 to support the installed base of First Generation
+3Com Products.
+
+17.6 Other Obligations Upon Termination. Except as otherwise provided in
+Sections 17.4(c) and 17.5(c) above, upon the expiration or earlier termination
+of the Agreement, the Receiving Party shall, within fifteen (15) days of any
+termination or expiration of this Agreement, return to the Disclosing Party or
+destroy all full or partial copies, in whatever media, of any and all materials
+in the Receiving Party's possession which had been furnished to the Receiving
+Party by the Disclosing Party pursuant to this Agreement, and the Receiving
+Party shall warrant in writing to the Disclosing Party within thirty (30) days
+after termination or expiration that all such materials have been returned to
+the Disclosing Party or destroyed.
+
+17
+
+
+
+
+
+
+
+
+17.7 Survival. Neither the termination or expiration of this Agreement
+shall relieve either party from its obligations to pay the other any sums
+accrued hereunder. The parties agree that their respective rights, obligations
+and duties under Sections 2 (Licenses) (except as otherwise set forth in this
+Section 17 (Term and Termination)), II (Proprietary Rights), 13
+(Indemnification), 14 (Confidentiality), 15 (Limitation of Liability), and 17
+(Term and Termination), as well as any rights, obligations and duties which by
+their nature extend beyond the termination or expiration of this Agreement shall
+survive any termination or expiration and remain in effect for a period of five
+(5) years thereafter or the period specified in this Agreement, if longer.
+
+18.     MISCELLANEOUS
+
+18.1 Notices. Any notice provided for or permitted under this Agreement
+will be treated as having been given when (a) delivered personally, (b) sent by
+confirmed telex or telecopy, (c) sent by commercial overnight courier with
+written verification of receipt, or (d) mailed postage prepaid by certified or
+registered mail, return receipt requested, to the party to be notified, at the
+address set forth below, or at such other place of which the other party has
+been notified in accordance with the provisions of this Section 18.1 (Notices).
+
+If to 3Com:   3Com Corporation
+5400 Bayfront Plaza
+Santa Clara, CA 95052
+Telecopy:  (408) 764-8955
+Attention: PCOps Purchasing Manager
+
+with a copy to the attention of 3Com's General Counsel at the address
+above, and a telecopy number of (408) 764-6434.
+
+If to Com21:  Com21, Inc.
+1991 Landings Drive
+Mountain View, CA 94043
+Telecopy:  (415) 254-5883
+Attention: President
+
+and copy to: Brobeck, Phleger & Harrison LLP
+Two Embarcadero Place
+2200 Geng Road
+Palo Alto, CA 94303
+Telecopy:  (415) 496-2885
+Attention: Edward M. Leonard, Esq.
+
+Such notice will be treated as having been received upon the earlier of actual
+receipt or five (5) days after posting.
+
+
+18
+
+
+
+
+
+
+
+18.2 Amendment: Waiver. This Agreement may be amended or supplemented
+only by a writing that is signed by duly authorized representatives of both
+parties. No term or provision hereof will be considered waived by either party,
+and no breach excused by either party, unless such waiver or consent is in
+writing signed on behalf of the party against whom the waiver is asserted. No
+consent by either party to, or waiver of, a breach by either party, whether
+express or implied, will constitute a consent to, waiver of, or excuse of any
+other, different, or subsequent breach by either party.
+
+18.3 Severability. If any provision of this Agreement is held invalid or
+unenforceable for any reason, the remainder of the provision shall be amended to
+achieve as closely as possible the economic effect of the original term and all
+other provision shall continue in full force and effect.
+
+18.4 Governing Law. This Agreement shall be governed by and construed
+under the laws of the United States and the State of California as applied to
+agreements entered into and to be performed entirely within California between
+California residents. The parties agree that the United Nations Convention on
+Contracts for the International Sale of Goods is specifically excluded from
+application to this Agreement.
+
+18.5 Choice of Forum. The parties hereby submit to the jurisdiction of,
+and waive any venue objections against, the United States District Court for the
+Northern District of California, San Jose Branch and the Superior and Municipal
+Courts of the State of California, Santa Clara County, in any litigation arising
+out of the Agreement.
+
+18.6 Injunctive Relief. It is expressly agreed that a material breach of
+this Agreement (except Section 14 (Confidentiality)) by a party could cause
+irreparable harm to the non-breaching party and that a remedy at law would be
+inadequate. Therefore, in addition to any and all remedies available at law, the
+non-breaching party shall be entitled to seek an injunction or other equitable
+remedies in all legal proceedings in the event of any threatened or actual
+violation of any or all of the provisions hereof.
+
+18.7 Attorneys' Fees. In any action to enforce this Agreement, the
+prevailing party shall be awarded all court costs and reasonable attorneys' fees
+incurred, including such costs and attorneys' fees incurred in enforcing and
+collecting any judgment.
+
+18.8 Force Majeure. Except for the payment of money, neither party will
+be liable for any failure or delay in performance beyond its control under this
+Agreement due to fire, explosion, earthquake, storm, flood or other weather,
+unavailability of necessary utilities or raw materials, war, insurrection, riot,
+act of God or the public enemy, law, act, order, export control regulation,
+proclamation, decree, regulation, ordinance, or instructions of Government or
+other public authorities, strikes, lockouts or other labor disputes or shortages
+or inability to obtain material or equipment, compliance with laws or regulation
+(including, without limitation, those related to infringement) or judgment or
+decree of a court of competent jurisdiction (not arising out of breach by such
+party of this Agreement). In the event of the happening of such a cause,
+
+19
+
+
+
+
+
+
+
+the party whose performance is so affected will give prompt, written notice to
+the other party, stating the period of time the same is expected to continue and
+will use its best efforts to mitigate the effect of the event giving rise to the
+failure or delay in performance.
+
+18.9 Assignment. 3Com may assign this Agreement to any person to whom it
+transfers all or substantially all of its proprietary rights in the 3Com Product
+and 3Com Technology. Otherwise, neither party may assign, voluntarily, by
+operation of law, or otherwise, any rights or delegate any duties under this
+Agreement (other than the right to receive payments) without the other party
+prior written consent and any attempt to do so without such consent will be void
+except that an assignment to an acquiror of all or substantially all of a
+party's stock, assets or business shall not require prior written consent of the
+other party. This Agreement will bind and inure to the benefit of the parties
+and their respective successors and permitted assigns.
+
+18.10 Relationship of the Parties. The parties to this Agreement are
+independent contractors. There is no relationship of agency, partnership, joint
+venture, employment, or franchise between the parties. Neither party has the
+authority to bind the other or to incur any obligation on its behalf.
+
+18.11 Allocation of Risk. The sections on limitation of liability,
+warranties and disclaimer of warranties allocate the risks in the Agreement
+between the parties. This allocation is an essential element of the basis of the
+bargain between the parties.
+
+18.12 Publicity. Neither party shall disclose the terms of this
+Agreement without the prior approval of the other party, except that a party may
+disclose the terms of this Agreement where required by law, provided that such
+party makes every reasonable effort to obtain confidential treatment or similar
+protection to the fullest extent available to avoid public disclosure of the
+terms of this Agreement. A party required by law to make disclosure of the terms
+of this Agreement will promptly notify the other party and permit the other
+party to review and participate in the application process seeking confidential
+treatment.
+
+18.13 Construction of Agreement. This Agreement has been negotiated by
+the respective parties hereto and their attorneys and the language hereof shall
+not be construed for or against any party. The titles and headings herein are
+for reference purposes only and shall not in any manner limit the construction
+of this Agreement, which shall be considered as a whole.
+
+18.14 Counterparts. This Agreement may be executed in two counterparts,
+each of which shall be deemed an original, but both of which together shall
+constitute one and the same instrument. If this Agreement is executed in
+counterparts, no signatory hereto shall be bound until both the parties named
+below have duly executed or caused to be duly executed a counterpart of this
+Agreement.
+
+18.15 Entire Agreement. This Agreement, including all Exhibits to this
+Agreement, constitutes the entire agreement between the parties relating to this
+subject matter and supersedes all prior or simultaneous representations,
+discussions, negotiations, and agreements, whether
+
+20
+
+
+
+
+
+
+written or oral.
+
+IN WITNESS WHEREOF, the parties hereto have executed this Agreement on
+the dates set forth below effective as of the Effective Date.
+
+3COM CORPORATION                       COM21, INC.
+
+By:                                      By:
+-------------------------------          -------------------------------
+
+Name:                                    Name:
+-----------------------------            -----------------------------
+
+Title:                                   Title:
+----------------------------             ----------------------------
+
+Date: March 22, 1996                     Date: March 22, 1996
+-----------------------------            -----------------------------
+
+List of Exhibits:
+
+A - Com21 Technology
+B - Specifications
+C - Com21 Mongoose Product Specification
+D - Com21 Mongoose Product Acceptance Criteria
+E - Design Package
+F - Com21 Trademarks
+G - Technology Escrow and Manufacturing License
+
+
+
+21
+
+
+
+
+
+
+
+EXHIBIT A
+
+COM21TECHNOLOGY
+[to be prepared and delivered consistent with Section 5.2]
+
+
+
+
+Cable modem CATV MAC and PHY interface specifications
+
+Cable modem management message protocol
+
+Cable modem system design
+
+Cable modem circuit design
+
+Cable modem printed circuit board design
+
+Cable modem diagnostic firmware
+
+Cable modem operational firmware
+
+Cable modem ASIC source code (RTL)
+
+Cable modem specifications and test criteria
+
+Cable modem mechanical design
+
+
+
+
+
+
+
+22
+
+
+
+
+
+
+
+EXHIBIT B
+
+SPECIFICATIONS
+[to be attached at the time of execution]
+
+
+
+
+
+
+
+
+
+
+23
+
+
+
+
+
+
+
+EXHIBIT C
+
+COM21 MONGOOSE PRODUCT SPECIFICATION
+[Product Specification to be attached at the time of execution]
+
+
+
+
+
+
+
+
+
+
+24
+
+
+
+
+
+
+
+EXHIBIT D
+
+COM21 MONGOOSE PRODUCT ACCEPTANCE CRITERIA
+
+[Acceptance criteria to be prepared
+and attached within 60 days after execution]
+
+
+COM21 Mongoose Product Acceptance Criteria
+Contract Exhibit D
+
+Revision 1.0, 6/07/96
+Ed Boyd
+John Griesing
+
+The following will be used to determine the acceptance of the Mongoose product.
+All of the items listed in the document will be required to accept the Mongoose
+product at meeting the Acceptance Criteria.
+
+
+1.      Design Package
+
+The following is the design package that 3Com expects to receive
+relative to the Mongoose product. It is expected that this package will
+be available in it's entirety at the time of fabrication of the final
+Mongoose product.
+
+-       RTL Verilog Code that compiles without errors and with all warnings
+messages investigated.
+
+-       Verilog simulation environment with self checking test cases. A self
+checking test case will report an error when the feature to be tested
+fails.
+
+-       Behavioral, minimum delay netlist, typical delay netlist, and maximum
+delay netlist simulations passing in Verilog simulation environment.
+
+-       Set of test vectors with 90% or greater test coverage.
+
+-       Simulate vectors using minimum, typical, and maximum delays.
+
+-       Simulate vectors using dynamic timing analyzer (i.e. Epilog) (optional).
+
+-       Synopsys scripts for synthesis and complete set of timing constraints
+for synopsys.
+
+-       Synopsys static timing analysis completed without violations.
+
+
+2.      Environmental Conditions
+
+The following conditions will be tested on the device.
+
+-       Temperature testing over operating range (0C-70C)
+
+-       Voltage margining (4.75 - 5.25 V)
+
+-       Timing Verification (per specification)
+
+
+25
+
+
+
+
+
+
+
+-       29K Bus
+
+-       Modulator/Demodulator
+
+-       SRAM
+
+-       MACE
+
+-       Mongoose BER (Bit Error Rate) Less than IOE-9
+
+3.      Mongoose Scenarios to be verified with final silicon.
+
+-       Ethernet Packet Bridging.
+
+-       Send packets to learn source addresses. Verify bridging based on
+learned addresses. Verify aging of old addresses and replacement
+of oldest entries.
+
+-       Send broadcast packets. Verify bridging based on ethertype table
+and broadcast rate count.
+
+-       Send packets directed to processor. Verify bridging based on
+local MAC enable switch, MAC address table, and multicast
+address table.
+
+-       Send multicast packets. Verify bridging based on multicast
+address table.
+
+-       MACE Interface.
+
+-       Transmit packets with MACE underruns, max collisions, and late
+collisions. Verify detection and recovery.
+
+-       Receive packets that had late collisions, CRC errors, alignment
+errors, and overruns. Verify detection and recovery. 
+
+-       Determine cell and frame boundaries.
+
+-       Verify Cell delination detection.
+
+-       Verify Frame delination detection.
+
+-       Generate T7EI errors. Verify detection and recovery.
+
+-       Corrupt/change both frame and cell boundaries. Verify detection
+of loss, reestablishment or connection, and graceful termination
+to upstream transmission.
+
+-       Decryption of packet.
+
+-       Decrypt OAM, AAL5 and raw ATM cells using all 10 keys based on
+the VPI. Verify cell contents.
+
+-       Downstream packet routing.
+
+-       Send OAM's packet and verify reception into queue 0.
+
+-       Send good and bad CRC-10 in OAM packets. Verify mongoose
+detection.
+
+-       Send Raw ATM cells to queues I and 2. Verify cell contents.
+
+-       Send AAL5 cells to queues 3, 4, & 5. Verify cells contents.
+
+-       Send good and bad CRC-32's with AAL5 packets. Verify mongoose
+detection.
+
+-       Downstream grant queuing.
+
+-       Send Acquisition grants. Verify detection, queuing, and random
+backoff.
+
+-       Send Contention grants. Verify detection, queuing and random
+backoff. Verify transition for Acquisition to Active state.
+
+-       Verify transition from Active to Idle state.
+
+-       Send Directed grants. Verify state changes and proper queuing.
+
+-       Overflow grant queue. Verify recovery.
+
+26
+
+
+
+
+
+
+
+-       Send grants with bad CRC-10's. Verify removal from queue.
+
+-       Encryption of packet.
+
+-       Encrypt OAM, AAL5 and raw ATM cells using all 4 keys. Verify
+cell contents.
+
+-       Encrypt packet with decryption occurring on downstream channel.
+
+-       FEC Generation.
+
+-       Verify FEC on upstream data. Generate bit errors and verify
+reception at head end.
+
+-       Upstream Queues.
+
+-       Upload multiple packets into all queues. Verify priority
+ordering and packet boundaries.
+
+-       Upstream Cell Generation.
+
+-       Send AAL5 Packets upstream. Verify header information, HEC,
+CRC-32, and reassembled packet at head end.
+
+-       Send OAM packets. Verify header information, HEC, CRC-10, and
+payload data.
+
+-       Send raw ATM cells. Verify data.
+
+-       Upstream traffic.
+
+-       Verify IDLE cell Generation.
+
+-       Verify start of frame delay.
+
+-       Ability to gracefully reset queues, MACE, and cable modem interface.
+
+-       Generate and acknowledge all interrupts.
+
+-       Read and write all processor accessible registers.
+
+4.      Test Equipment
+
+The above testing requires the following equipment from Com21
+
+-       Latest version HCX and associated SW
+
+
+
+
+
+
+
+
+27
+
+
+
+
+
+
+
+EXHIBIT E
+
+DESIGN PACKAGE
+
+[description of materials to be delivered consistent with Section 5.2]
+
+
+
+
+
+
+
+
+
+
+28
+
+
+
+
+
+
+
+EXHIBIT F
+
+COM21 TRADEMARKS
+
+[to be determined]
+
+
+
+
+
+
+
+
+
+
+29
+
+
+
+
+
+
+
+EXHIBIT G
+
+TECHNOLOGY ESCROW AND MANUFACTURING LICENSE
+
+Definitions
+
+'Products' means the Com21 Headend products to be sold by Com21 to 3Com
+under the Headend Distribution Agreement, and shall include all enhancements,
+fixes, Updates, Upgrades and modifications to the Products made by or for Com21.
+'Update' shall mean a replacement of all or a portion of a Product that is
+primarily intended to Fix an error or deficiency in the Product. 'Upgrade' shall
+mean a replacement of all or a portion of a Product that is primarily intended
+to add functionality or performance to the Product and for which a separate or
+additional charge is made to the end user.
+
+'Technology Documentation' means all designs, drawings, specifications, test
+information, vendor lists, source and object code versions of the software
+incorporated into or used by Com21 to design, manufacture or maintain the
+Products and all other data and information owned by Com21 or to which Com21 has
+the right to grant sublicenses with respect to the design, manufacture and use
+of the Products. The Technology Documentation will include a list of third party
+technology, if any, in the Products to which Com21 cannot sublicense the rights
+envisioned by the manufacturing license below, and persons at such third parties
+to contact regarding obtaining licenses. The Technology Documentation will
+further include a list of consultants, if any, whom Com21 reasonably believes
+could provide technical support to 3Com in connection with 3Com's exercising of
+the rights under the manufacturing license below. Prior to the date of first
+shipment of the Product by Com21 to 3Com, the parties will attach an exhibit to
+the Headend Distribution Agreement that sets forth a complete list of the
+Technology Documentation that exists as of such date. Com21 shall update such
+Technology Documentation if it updates its own archival copy of the Technology
+Documentation.
+
+Technology Escrow and Manufacturing License
+
+Within ten (10) days after the first shipment of Products from Com21 to
+3Com, Com21 shall place the Technology Documentation for all versions of the
+Products initially agreed to be sold by Com21 to 3Com under the Headend
+Distribution Agreement in a mutually agreed upon escrow account pursuant to the
+form of escrow agreement previously provided by 3Com to Com21. Thereafter,
+within ten (10) days after the execution of any amendments to the Headend
+Distribution Agreement to add additional updates or versions of the Products or
+to add new Products, Com21 shall place the Technology Documentation for such
+Products into such escrow account. 3Com shall pay any and all annual fees,
+deposit fees, reporting fees and costs associated with such escrow, however,
+Com21 will bear its own cost of creating the deposit and all updates thereto.
+Com21 hereby grants to 3Com a worldwide, nonexclusive, fully-paid, royalty-free,
+perpetual, irrevocable license to manufacture, have manufactured, sell, repair,
+use, develop, modify, reproduce, and distribute the Products under all
+registered and unregistered copyrights, patents, trade secrets, mask works,
+designs,
+
+G-1
+
+
+
+
+
+
+drawings, specifications, vendor lists and all other data and other information
+owned by Com21 or to which Com21 has the right to grant sublicenses with respect
+to the design, manufacture, maintenance and use of the Products and any other
+intellectual property rights associated therewith, and to prepare and have
+prepared derivative works based thereon, and to use source code for the software
+contained in or associated with the Products to make and have made, use,
+develop, modify, reproduce, distribute and sell the Products and prepare and
+have prepared derivative works based on the Products, and to grant sublicenses
+to third parties as to any or all of the rights granted to 3Com under this
+license, only in the event Com21 becomes insolvent, generally fails to pay or
+admits in writing its inability to pay its debts as they become due, (ii)
+applies for or consents to the appointment of a trustee, receiver or other
+custodian or makes a general assignment for the benefit of its creditors, (iii)
+any bankruptcy, reorganization, debt arrangement or other case or proceeding
+under any bankruptcy or insolvency law or other dissolutions or liquidation
+proceedings are commenced by or against Com21 and, if such case is not commenced
+by Com21, it is acquiesced in or remains undismissed for ninety (90) days, (iv)
+Com21 takes any corporate or other action to authorize, or in furtherance of,
+any of the foregoing, (v) any event occurs which would permit 3Com to terminate
+the Headend Distribution Agreement or the Technology License and Reseller
+Agreement to which this exhibit is attached as Exhibit G (Technology Escrow and
+Manufacturing License) (except as described in Section 5.3 (Acceptance) or if
+3Com elects not to renew in accordance with Section 17.1 (Term) of the
+Technology License and Reseller Agreement), (vi) Com21 ceases, or gives notice
+that it intends to cease, manufacturing and distributing the Products or (vii)
+Com21 is unable to meet the reasonable supply requirements of 3Com's customers.
+The occurrence of any of the foregoing shall constitute an 'Event of Escrow
+Release' for purposes of the Headend Distribution Agreement.
+
+
+G-2
+
+

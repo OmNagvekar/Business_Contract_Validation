@@ -15,8 +15,8 @@ from tqdm import tqdm
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 
-os.environ["GRADIENT_ACCESS_TOKEN"] = "CQ3aCAbeuf1RP8uhdZPs5yYMuZiqIber"
-os.environ["GRADIENT_WORKSPACE_ID"] = "cc633cd3-d52e-41e6-beef-e2ac706a75e5_workspace"
+os.environ["GRADIENT_ACCESS_TOKEN"] = "YOUR_GRADIENT_ACCESS_TOKEN_HERE"
+os.environ["GRADIENT_WORKSPACE_ID"] = "YOUR_GRADIENT_WORKSPACE_ID_HERE"
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-base-en")
 
 class QueryProcessor:

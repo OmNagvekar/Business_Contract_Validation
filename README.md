@@ -12,6 +12,8 @@
 ## Problem Statement
 The aim of this project is to automate the validation of business contracts by ensuring they adhere to predefined standards. This is achieved by classifying the input contracts and then comparing them against standard documents to identify any deviations.
 
+## Presentation [here](https://docs.google.com/presentation/d/1oNmM9cjXkfXuyB23qdgomxTB6Q7wtNfU/edit?usp=drivesdk&ouid=106019895848480696926&rtpof=true&sd=true)
+
 ## Approach
 
 ### 1. Classification of Input Contracts

@@ -7,8 +7,8 @@ from tqdm import tqdm
 
 embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-base-en")
 
-path = "/home/chinu_tensor/Intel_Unnati/LLMA"
-files = os.listdir("/home/chinu_tensor/Intel_Unnati/LLMA/data")
+path = "./"
+files = os.listdir("./data")
 for i in tqdm(files):
     doc = SimpleDirectoryReader(input_dir=f"{path}/data/{i}").load_data()
     os.system(f"mkdir {path}/new_data/{i}")

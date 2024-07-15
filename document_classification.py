@@ -10,10 +10,10 @@ class DocumentClassification:
     def __init__(self,path) -> None:
         self.path = path
         self.feature_array = []
-        file=open("/home/chinu_tensor/Intel_Unnati/LLMA/vectorizer.pkl",'rb')
+        file=open("./vectorizer.pkl",'rb')
         self.vectorizer = pickle.load(file)
         file.close()
-        self.model = tf.keras.models.load_model("/home/chinu_tensor/Intel_Unnati/LLMA/Document_classification3.keras")
+        self.model = tf.keras.models.load_model("./Document_classification3.keras")
         self.text = self.pdf_loader()
         self.embed_gen()    
 

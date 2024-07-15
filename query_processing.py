@@ -51,7 +51,7 @@ class QueryProcessor:
             max_tokens=510,
         )
 
-        self.index = load_index_from_storage(StorageContext.from_defaults(persist_dir=f"/home/chinu_tensor/Intel_Unnati/LLMA/vector_indexes/{doc_classification.classify_doc()}/"))
+        self.index = load_index_from_storage(StorageContext.from_defaults(persist_dir=f"./vector_indexes/{doc_classification.classify_doc()}/"))
         self.query_engine = self.index.as_query_engine(llm=llm)
 
     def pdf_to_chunks(self):

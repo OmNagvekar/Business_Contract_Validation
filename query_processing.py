@@ -1,22 +1,21 @@
-from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llama_index.llms.gradient import GradientBaseModelLLM
+# from llama_index.llms.gradient import GradientBaseModelLLM
+from llama_index.llms.ollama import Ollama
 from llama_index.core.text_splitter import TokenTextSplitter
 from llama_index.core import load_index_from_storage, StorageContext, Settings
 import fitz  # PyMuPDF is imported as fitz
-from llama_index.readers.smart_pdf_loader import SmartPDFLoader
-import time
 import document_classification as ds
 import pandas as pd
-import os
+import torch
 from concurrent.futures import ThreadPoolExecutor,as_completed
 import logging
 from tqdm import tqdm
+from creating_indexes_and_storing import CreateVectorIndex
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 
-os.environ["GRADIENT_ACCESS_TOKEN"] = "YOUR_GRADIENT_ACCESS_TOKEN_HERE"
-os.environ["GRADIENT_WORKSPACE_ID"] = "YOUR_GRADIENT_WORKSPACE_ID_HERE"
+# os.environ["GRADIENT_ACCESS_TOKEN"] = "YOUR_GRADIENT_ACCESS_TOKEN_HERE"
+# os.environ["GRADIENT_WORKSPACE_ID"] = "YOUR_GRADIENT_WORKSPACE_ID_HERE"
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-base-en")
 
 class QueryProcessor:
@@ -24,6 +23,7 @@ class QueryProcessor:
         self.truth_values = None 
         self.chunks = None
         self.results = None 
+        self.vector_exits=CreateVectorIndex('./')
         self.input_pdf = input_pdf
         self.text_splitter = TokenTextSplitter(
             separator=" ", 
@@ -46,13 +46,15 @@ class QueryProcessor:
         #     model_kwargs={"torch_dtype":torch.float16, "load_in_4bit":True}
         # ) 
 
-        llm = GradientBaseModelLLM(
-            base_model_slug="llama2-7b-chat",
-            max_tokens=510,
-        )
+        # llm = GradientBaseModelLLM(
+        #     base_model_slug="llama2-7b-chat",
+        #     max_tokens=510,
+        # )
+        device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        self.llm = Ollama(model="phi3:mini", request_timeout=360.0,device=device)
 
         self.index = load_index_from_storage(StorageContext.from_defaults(persist_dir=f"./vector_indexes/{doc_classification.classify_doc()}/"))
-        self.query_engine = self.index.as_query_engine(llm=llm)
+        self.query_engine = self.index.as_query_engine(llm=self.llm)
 
     def pdf_to_chunks(self):
         doc = fitz.open(self.input_pdf)

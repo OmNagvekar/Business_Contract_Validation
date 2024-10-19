@@ -4,11 +4,10 @@
 
 
 ## Team Black Pearl
-    1.Anuja Deshpande.
-    2.Arya Dhavale.
-    3.Chinmay Hemant Bhosale.
-    4.Om Nagvekar.
-    5.Sanket Jadhav.
+    1.Om Nagvekar.
+    2.Chinmay Hemant Bhosale.
+    3.Parth Sarnobat.
+    4.Mandar Patil.
 ## Problem Statement
 The aim of this project is to automate the validation of business contracts by ensuring they adhere to predefined standards. This is achieved by classifying the input contracts and then comparing them against standard documents to identify any deviations.
 

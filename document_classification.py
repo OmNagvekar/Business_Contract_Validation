@@ -7,13 +7,13 @@ import keras
 import pymupdf as pdf
 
 class DocumentClassification:
-    def __init__(self,path) -> None:
+    def __init__(self,path,model) -> None:
         self.path = path
         self.feature_array = []
         file=open("./vectorizer.pkl",'rb')
         self.vectorizer = pickle.load(file)
         file.close()
-        self.model = tf.keras.models.load_model("./Document_classification3.keras")
+        self.model = model#tf.keras.models.load_model("/home/chinu_tensor/Business_Contract_Validation/Document_classification3.keras")
         self.text = self.pdf_loader()
         self.embed_gen()    
 
@@ -38,3 +38,6 @@ class DocumentClassification:
         for page in doc:
             all_text += page.get_text()
         return [all_text]
+if __name__=="__main__":
+    doc = DocumentClassification('../Downloads/exhibit101.pdf')
+    print(doc.classify_doc())

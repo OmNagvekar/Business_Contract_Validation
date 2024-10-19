@@ -7,16 +7,20 @@ import fitz  # PyMuPDF is imported as fitz
 import document_classification as ds
 import pandas as pd
 import torch
+import time
 from concurrent.futures import ThreadPoolExecutor,as_completed
 import logging
 from tqdm import tqdm
 from creating_indexes_and_storing import CreateVectorIndex
+import keras
+import tensorflow as tf
+
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 
 # os.environ["GRADIENT_ACCESS_TOKEN"] = "YOUR_GRADIENT_ACCESS_TOKEN_HERE"
 # os.environ["GRADIENT_WORKSPACE_ID"] = "YOUR_GRADIENT_WORKSPACE_ID_HERE"
-Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-base-en")
+Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-base-en",cache_folder='../NanoScience/embed_model;')
 
 class QueryProcessor:
     def __init__(self, input_pdf):
@@ -30,8 +34,11 @@ class QueryProcessor:
             chunk_size=50,
             chunk_overlap=20
         ) 
-        doc_classification = ds.DocumentClassification(self.input_pdf)
-
+        print(type(self.input_pdf))
+        print(self.input_pdf)
+        model = tf.keras.models.load_model("./Document_classification3.keras")
+        doc_classification = ds.DocumentClassification(path=self.input_pdf,model=model)
+        print(doc_classification.classify_doc())
         # llmsherpa_api_url = "https://readers.llmsherpa.com/api/document/developer/parseDocument?renderFormat=all"
         # self.pdf_loader = SmartPDFLoader(llmsherpa_api_url=llmsherpa_api_url)
         # llm = HuggingFaceLLM(
@@ -51,7 +58,7 @@ class QueryProcessor:
         #     max_tokens=510,
         # )
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        self.llm = Ollama(model="phi3:mini", request_timeout=360.0,device=device)
+        self.llm = Ollama(model="llama3", request_timeout=360.0,device=device)
 
         self.index = load_index_from_storage(StorageContext.from_defaults(persist_dir=f"./vector_indexes/{doc_classification.classify_doc()}/"))
         self.query_engine = self.index.as_query_engine(llm=self.llm)
@@ -79,26 +86,28 @@ class QueryProcessor:
         self.results = []
         self.truth_values = []
         count = 0
-        with ThreadPoolExecutor() as executor:
-            futures = [executor.submit(self.query_clause, clause) for clause in self.chunks]
-            for future in tqdm(as_completed(futures)):
-                clause, result, truth_value = future.result()
-                self.results.append(result)
-                self.truth_values.append(truth_value)
-                if count == len(self.chunks):
-                   break
+        # with ThreadPoolExecutor() as executor:
+        #     futures = [executor.submit(self.query_clause, clause) for clause in self.chunks]
+        #     for future in tqdm(as_completed(futures)):
+        #         clause, result, truth_value = future.result()
+        #         self.results.append(result)
+        #         self.truth_values.append(truth_value)
+        #         if count == len(self.chunks):
+        #            break
 
-                else:
-                    count+=1
-        # for chunk in tqdm(self.chunks):
-        #     clause,result,truth_value = self.query_clause(chunk)
-        #     time.sleep(0.3)
-        #     #print(f"result {result}")
-        #     self.results.append(result)
-        #     self.truth_values.append(truth_value) 
+        #         else:
+        #             count+=1
+
+        print(len(self.chunks))
+        for chunk in tqdm(self.chunks):
+            clause,result,truth_value = self.query_clause(chunk)
+            time.sleep(0.3)
+            #print(f"result {result}")
+            self.results.append(result)
+            self.truth_values.append(truth_value) 
            
             #print(self.truth_values)
-            return None
+            #return None
 
     def gen_df(self):
         return pd.DataFrame({"Clause": self.chunks, "Truth_Value": self.truth_values,"Responses":self.results})
@@ -124,6 +133,6 @@ class QueryProcessor:
         doc.save("new.pdf")
 
 if __name__ == "__main__":
-    obj = QueryProcessor(input_pdf="./e.pdf")
+    obj = QueryProcessor(input_pdf="./exhibit101.pdf")
     obj.checking_alignment()
     obj.pdf_highlighter()

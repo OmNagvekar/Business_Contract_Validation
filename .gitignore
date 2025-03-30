@@ -1,2 +1,7 @@
 venv/
 Document_classification3.keras
+*.log
+Logs/
+/gemini_key.txt
+Testing PDF/
+__pycache__/

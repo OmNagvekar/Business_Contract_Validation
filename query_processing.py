@@ -116,7 +116,7 @@ class QueryProcessor:
         # Load vector index from storage
         try:
             # For demonstration, the directory is hard-coded. Consider dynamic selection.
-            doc_classification = ds.DocumentClassification(path=self.input_pdf,model=model)
+            doc_classification = ds.DocumentClassification(path=self.input_pdf,model=self.model)
             persist_dir = f"./vector_indexes/{doc_classification.classify_doc()}/"
             # persist_dir = "./vector_indexes/Employment Agreements/"
             logger.info(f"Loading vector index from: {persist_dir}")

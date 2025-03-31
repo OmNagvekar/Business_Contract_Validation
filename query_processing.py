@@ -1,15 +1,12 @@
-import os
-import time
 import logging
 import fitz  # PyMuPDF
 import pandas as pd
 import torch
 from tqdm import tqdm
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from io import BytesIO
 
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.llms.ollama import Ollama
-from llama_index.core.text_splitter import TokenTextSplitter
 from llama_index.core import load_index_from_storage, StorageContext, Settings
 
 from creating_indexes_and_storing import CreateVectorIndex
@@ -21,12 +18,13 @@ from ratelimit import limits, sleep_and_retry
 from tenacity import retry, stop_after_attempt, wait_exponential
 from llama_index.core.llms import ChatMessage, MessageRole
 from llama_index.core import ChatPromptTemplate
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from llama_index.core.node_parser import LangchainNodeParser
+from llama_index.core import Document
 
 REQUESTS = 5
 PERIOD = 60  # seconds
 
-# Global cancellation event
-STOP_EVENT = None
 
 
 # Set up logging
@@ -40,9 +38,17 @@ Settings.embed_model = HuggingFaceEmbedding(
 
 # Define a refined project description and a chat prompt template.
 PROJECT_DESCRIPTION = (
-    "This project aims to automate business contract validation by ensuring that contracts meet "
-    "predefined standards. The system first classifies the input contracts and then compares them "
-    "against standard templates to detect any deviations or potential issues."
+    "This project automates business contract validation by ensuring that contracts meet predefined standards. "
+    "The system classifies input contracts and compares them against standard templates (including key provisions "
+    "from the Indian Contract Law and the Indian Contract Act) to detect any deviations. "
+    "Each clause must be evaluated for compliance with these legal standards. "
+    "You are provided with a sample Employment Agreement, which is structured into sections and subsections."
+)
+
+EXAMPLE_EVALUATION = (
+    "For example, consider the clause: 'The contractor shall maintain confidentiality for 3 years after termination.' "
+    "If the standard requires a confidentiality period of at least 2 years, then the correct evaluation would be 'Yes', "
+    "with a rationale such as: 'The clause meets the minimum confidentiality period required by the standards.'"
 )
 
 CHAT_PROMPT_TEMPLATE = ChatPromptTemplate(
@@ -53,41 +59,41 @@ CHAT_PROMPT_TEMPLATE = ChatPromptTemplate(
         ),
         ChatMessage(
             role=MessageRole.USER,
+            content="Example Evaluation: " + EXAMPLE_EVALUATION
+        ),
+        ChatMessage(
+            role=MessageRole.USER,
             content=(
-                "Please evaluate whether the following contract clause adheres to the above standards. "
+                "Now, please evaluate whether the following contract clause adheres to the above standards. "
                 "Respond with 'Yes' or 'No' and provide a brief rationale.\nClause: {clause}"
             )
         )
     ]
 )
 
-class QueryProcessor:
-    def __init__(self, input_pdf: str,remote_llm:bool=False) -> None:
-        logger.info("Initializing QueryProcessor")
-        global STOP_EVENT
-        # Initialize the cancellation event if not already done.
-        if STOP_EVENT is None:
-            from threading import Event
-            STOP_EVENT = Event()
 
+class QueryProcessor:
+    def __init__(self, pdf_bytes: bytes,remote_llm:bool=False) -> None:
+        logger.info("Initializing QueryProcessor")
+        # Initialize the cancellation event if not already done.
         self.truth_values = None 
         self.chunks = None
         self.results = None 
         self.stop =False
         
-        self.input_pdf = input_pdf
-        logger.info(f"Input PDF: {self.input_pdf}")
+        self.pdf_bytes = pdf_bytes # store the PDF in memory
+        logger.info("PDF content loaded in memory (size: %d bytes)", len(pdf_bytes))
         
         # Initialize the vector index creator
-        self.vector_exits = CreateVectorIndex('./')
+        self.vector_exits = CreateVectorIndex('./').create_indexes()
         
-        # Set up text splitter
-        self.text_splitter = TokenTextSplitter(
-            separator=" ", 
-            chunk_size=50,
-            chunk_overlap=20
+        parser = RecursiveCharacterTextSplitter(
+            separators=["\n\n", "\n", ". "],
+            chunk_size=1000,       # adjust chunk size as needed
+            chunk_overlap=200      # adjust overlap to retain context between chunks
         )
-        
+        self.text_splitter = LangchainNodeParser(lc_splitter=parser)
+
         # Load the classification model
         try:
             logger.info("Loading TensorFlow model for document classification")
@@ -103,7 +109,7 @@ class QueryProcessor:
         if remote_llm:
             with open("gemini_key.txt",'r') as f:
                 key = f.read()
-            self.llm = llm = Gemini(
+            self.llm = Gemini(
                 model="models/gemini-2.0-flash",
                 api_key=key,  # uses GOOGLE_API_KEY env var by default
                 temperature=0.5,
@@ -116,7 +122,7 @@ class QueryProcessor:
         # Load vector index from storage
         try:
             # For demonstration, the directory is hard-coded. Consider dynamic selection.
-            doc_classification = ds.DocumentClassification(path=self.input_pdf,model=self.model)
+            doc_classification = ds.DocumentClassification(pdf_bytes=self.pdf_bytes,model=self.model)
             persist_dir = f"./vector_indexes/{doc_classification.classify_doc()}/"
             # persist_dir = "./vector_indexes/Employment Agreements/"
             logger.info(f"Loading vector index from: {persist_dir}")
@@ -128,9 +134,10 @@ class QueryProcessor:
             self.query_engine = None
 
     def pdf_to_chunks(self):
-        logger.info(f"Opening PDF file: {self.input_pdf}")
+        logger.info("Opening PDF from in-memory bytes")
         try:
-            doc = fitz.open(self.input_pdf)
+            pdf_stream = BytesIO(self.pdf_bytes)
+            doc = fitz.open(stream=pdf_stream,filetype="pdf")
         except Exception as e:
             logger.error(f"Failed to open PDF file: {e}")
             return []
@@ -138,7 +145,10 @@ class QueryProcessor:
         text = ""
         for page in doc:
             text += page.get_text()
-        chunks = self.text_splitter.split_text(text)
+            
+        documents = [Document(text=text)]
+        nodes = self.text_splitter.get_nodes_from_documents(documents)
+        chunks = [node.get_content() for node in nodes]
         logger.info(f"Extracted text and split into {len(chunks)} chunks")
         return chunks
     
@@ -147,7 +157,7 @@ class QueryProcessor:
     @retry(stop=stop_after_attempt(5), wait=wait_exponential(multiplier=2, min=1, max=30))
     def query_clause(self, clause: str):
         
-        if STOP_EVENT.is_set() or self.stop:
+        if self.stop:
             logger.info("Cancellation detected before API call. Returning 'Cancelled' response.")
             return clause, "Cancelled", False
         
@@ -155,8 +165,7 @@ class QueryProcessor:
         try:
             logger.info("Querying clause through LLM")
             query_prompt = CHAT_PROMPT_TEMPLATE.format(clause=clause)
-            query_text = f"Evaluate whether the following clause aligns with the given documents. Provide an answer in yes or no: {clause}"
-            response = self.query_engine.query(query_text)
+            response = self.query_engine.query(query_prompt)
             logger.info(f"Response of LLM: {str(response)}")
         except Exception as e:
             logger.error(f"Query failed: {e}. Defaulting response to 'yes'")
@@ -174,10 +183,9 @@ class QueryProcessor:
         
         self.results = []
         self.truth_values = []
-        count = 0
         logger.info(f"Processing {len(self.chunks)} chunks for alignment")
         for count,chunk in enumerate(tqdm(self.chunks, desc="Evaluating chunks"),start=1):
-            if STOP_EVENT.is_set() or self.stop:
+            if self.stop:
                 logger.info("Cancellation requested. Halting alignment checking.")
                 break
             clause, result, truth_value = self.query_clause(chunk)
@@ -185,6 +193,7 @@ class QueryProcessor:
             self.truth_values.append(truth_value)
             count += 1
             logger.debug(f"Processed chunk {count}: Truth value = {truth_value}")
+            logger.info(f"\nclause {clause}\n, result {result}\n, truth_value {truth_value}\n")
         logger.info("Completed alignment checking.")
 
     def gen_df(self):
@@ -198,18 +207,18 @@ class QueryProcessor:
     def pdf_highlighter(self):
         logger.info("Starting PDF highlighting process")
         df = self.gen_df()
-        df.to_csv("comment.csv", index=False)
         needles = [clause for clause, truth in zip(df['Clause'], df['Truth_Value']) if not truth]
         logger.info(f"Found {len(needles)} clauses that do not align with the documents")
         
         try:
-            doc = fitz.open(self.input_pdf)
+            pdf_stream = BytesIO(self.pdf_bytes)
+            doc = fitz.open(stream=pdf_stream, filetype="pdf")
         except Exception as e:
             logger.error(f"Failed to open PDF for highlighting: {e}")
             return
         
         for needle in tqdm(needles, desc="Highlighting needles"):
-            if STOP_EVENT.is_set() or self.stop:
+            if self.stop:
                 logger.info("Cancellation requested. Halting PDF highlighting.")
                 break
             for page_num, page in enumerate(doc, start=1):
@@ -220,16 +229,19 @@ class QueryProcessor:
                     p1 = rects[0].tl
                     p2 = rects[-1].br
                     page.add_highlight_annot(start=p1, stop=p2)
-        output_pdf = "new.pdf"
         try:
-            doc.save(output_pdf)
-            logger.info(f"Highlighted PDF saved as {output_pdf}")
+            pdf_buffer = BytesIO()
+            doc.save(pdf_buffer)
+            pdf_buffer.seek(0)
+            pdf= pdf_buffer.read()
+            logger.info(f"Highlighted PDF saved")
+            return pdf,df.to_csv(index=False).encode("utf-8")
         except Exception as e:
             logger.error(f"Failed to save highlighted PDF: {e}")
 
 if __name__ == "__main__":
     logger.info("Starting QueryProcessor main execution")
-    qp = QueryProcessor(input_pdf="./exhibit101.pdf")
+    qp = QueryProcessor(pdf_bytes=bytes(open("./exhibit101.pdf","rb").read()),remote_llm=True)
     qp.checking_alignment()
     qp.pdf_highlighter()
     logger.info("Execution finished")

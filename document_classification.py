@@ -6,13 +6,14 @@ import keras
 
 import pymupdf as pdf
 import logging
+from io import BytesIO
 
 logger  = logging.getLogger(__name__)
 
 class DocumentClassification:
-    def __init__(self,path,model) -> None:
-        logger.info("Initializing DocumentClassification for path: %s", path)
-        self.path = path
+    def __init__(self,pdf_bytes:bytes,model) -> None:
+        logger.info("Initializing DocumentClassification with PDF bytes.")
+        self.pdf_bytes = pdf_bytes
         self.feature_array = []
         try:
             with open("./vectorizer.pkl", 'rb') as file:
@@ -61,7 +62,8 @@ class DocumentClassification:
         try:
             logger.info("Loading PDF from path: %s", self.path)
             all_text = ""
-            doc = pdf.open(self.path)
+            pdf_stream = BytesIO(self.pdf_bytes)
+            doc = pdf.open(stream=pdf_stream, filetype="pdf")
             logger.info("PDF opened successfully. Number of pages: %d", len(doc))
             for page in doc:
                 all_text += page.get_text()
@@ -71,5 +73,12 @@ class DocumentClassification:
             logger.error("Error loading PDF: %s", e)
             return [""]
 if __name__=="__main__":
-    doc = DocumentClassification('../Downloads/exhibit101.pdf')
+    # For testing purposes: load a PDF file from disk and create a dummy model.
+    with open("../Downloads/exhibit101.pdf", "rb") as f:
+        pdf_bytes = f.read()
+    # Create a dummy model for testing (replace with your actual model)
+    model = tf.keras.Sequential([
+        tf.keras.layers.Dense(10, input_shape=(100,), activation='softmax')
+    ])
+    doc = DocumentClassification(pdf_bytes, model)
     print(doc.classify_doc())

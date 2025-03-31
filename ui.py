@@ -152,20 +152,23 @@ if uploaded_file is not None:
         # If already processed, retrieve results from session state.
         pdf_data, csv_data = st.session_state.result
         st.success("File has been processed successfully.")
-
-    if pdf_data:
-        st.download_button(
-            label="Download Highlighted PDF",
-            data=pdf_data,
-            file_name=f"Highlighted_{st.session_state.uploaded_file.name}",
-            mime='application/pdf'
-        )
-    if csv_data:
-        st.download_button(
-            label="Download Response CSV",
-            data=csv_data,
-            file_name=f"{st.session_state.uploaded_file.name}_comments.csv",
-            mime='text/csv'
-        )
-    if pdf_data:
-        pdf_viewer(input=pdf_data, width=700)
+    try:
+        if pdf_data:
+            st.download_button(
+                label="Download Highlighted PDF",
+                data=pdf_data,
+                file_name=f"Highlighted_{st.session_state.uploaded_file.name}",
+                mime='application/pdf'
+            )
+        if csv_data:
+            st.download_button(
+                label="Download Response CSV",
+                data=csv_data,
+                file_name=f"{st.session_state.uploaded_file.name}_comments.csv",
+                mime='text/csv'
+            )
+        if pdf_data:
+            pdf_viewer(input=pdf_data, width=700)
+    except Exception as e:
+        logger.error("Error during file download: %s", e, exc_info=True)
+        st.error("An error occurred during file download. Please check the logs for details.")

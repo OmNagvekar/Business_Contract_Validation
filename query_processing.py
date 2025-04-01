@@ -42,7 +42,6 @@ PROJECT_DESCRIPTION = (
     "The system classifies input contracts and compares them against standard templates (including key provisions "
     "from the Indian Contract Law and the Indian Contract Act) to detect any deviations. "
     "Each clause must be evaluated for compliance with these legal standards. "
-    "You are provided with a sample Employment Agreement, which is structured into sections and subsections."
 )
 
 EXAMPLE_EVALUATION = (
@@ -60,6 +59,10 @@ CHAT_PROMPT_TEMPLATE = ChatPromptTemplate(
         ChatMessage(
             role=MessageRole.USER,
             content="Example Evaluation: " + EXAMPLE_EVALUATION
+        ),
+        ChatMessage(
+            role= MessageRole.SYSTEM,
+            content= "History (for context only): {history}"
         ),
         ChatMessage(
             role=MessageRole.USER,
@@ -155,7 +158,7 @@ class QueryProcessor:
     @sleep_and_retry
     @limits(calls=REQUESTS, period=PERIOD)
     @retry(stop=stop_after_attempt(5), wait=wait_exponential(multiplier=2, min=1, max=30))
-    def query_clause(self, clause: str):
+    def query_clause(self, history:str,clause: str):
         
         if self.stop:
             logger.info("Cancellation detected before API call. Returning 'Cancelled' response.")
@@ -164,7 +167,7 @@ class QueryProcessor:
         response = None
         try:
             logger.info("Querying clause through LLM")
-            query_prompt = CHAT_PROMPT_TEMPLATE.format(clause=clause)
+            query_prompt = CHAT_PROMPT_TEMPLATE.format(history=history,clause=clause)
             response = self.query_engine.query(query_prompt)
             logger.info(f"Response of LLM: {str(response)}")
         except Exception as e:
@@ -183,14 +186,26 @@ class QueryProcessor:
         
         self.results = []
         self.truth_values = []
+        self.clauses =[]
         logger.info(f"Processing {len(self.chunks)} chunks for alignment")
         for count,chunk in enumerate(tqdm(self.chunks, desc="Evaluating chunks"),start=1):
             if self.stop:
                 logger.info("Cancellation requested. Halting alignment checking.")
                 break
-            clause, result, truth_value = self.query_clause(chunk)
+
+            # Build history from the previous clause and response if available.
+            if self.results and self.clauses:
+                history = f"Previous Clause: {self.clauses[-1]}\nPrevious Response: {self.results[-1]}"
+            else:
+                history = ""
+
+            clause, result, truth_value = self.query_clause(history,chunk)
+            if result == "Cancelled":
+                logger.info("Cancellation detected. Stopping processing.")
+                break
             self.results.append(result)
             self.truth_values.append(truth_value)
+            self.clauses.append(clause)
             count += 1
             logger.debug(f"Processed chunk {count}: Truth value = {truth_value}")
             logger.info(f"\nclause {clause}\n, result {result}\n, truth_value {truth_value}\n")

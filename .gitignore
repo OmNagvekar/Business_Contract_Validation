@@ -5,3 +5,5 @@ Logs/
 /gemini_key.txt
 Testing PDF/
 __pycache__/
+.ipynb_checkpoints/
+*.txt

@@ -1,0 +1,95 @@
+Clause,Truth_Value,Responses,actual_response,actual_truth_value
+"EMPLOYMENT AGREEMENT
+This Employment Agreement (the “Agreement”) is made and entered into on this 5th day of April, 2025 by and between:
+Acme Innovations Pvt. Ltd.
+a private limited company incorporated under the Companies Act, 1956, having its registered office at 123 Business Park, Mumbai, Maharashtra (hereinafter referred
+to as the “Employer”),
+AND
+Jane Smith, son/daughter of Pat Doe, aged 30 years, residing at 456 Green Avenue, Pune, Maharashtra (hereinafter referred to as the “Employee”).
+WHEREAS, the Employer desires to engage the Employee and the Employee agrees to provide services to the Employer on the terms and conditions set forth herein,",TRUE,"Yes, the clause identifies the involved parties, their roles, and the agreement's purpose, which aligns with standard contract practices.
+",Yes : This clause appears to conform with general employment contract requirements.,TRUE
+"NOW, THEREFORE, in consideration of the mutual promises herein contained, the parties agree as follows:
+1. Definitions and Interpretations
+1.1 “Confidential Information” means any and all information, regardless of its nature, including data, trade secrets, future plans, and personal opinions, whether or not
+marked as confidential.
+1.2 “Employment” shall mean the period during which the Employee provides any services to the Employer, without any clear definition of the scope or limits of such
+services.
+2. Appointment and Duties
+2.1 Position: The Employee is hired as a Senior Software Developer with duties that may be modified at the Employer’s whim without any formal process or clear
+guidelines.
+2.2 Duties:",TRUE,"Yes, the clause outlines definitions and interpretations, appointment, and duties, which are typical components of an employment agreement.
+",Yes : This clause appears to conform with general employment contract requirements.,TRUE
+"guidelines.
+2.2 Duties:
+  a. The Employee shall perform any tasks assigned, whether related to his expertise or not.
+  b. The Employer reserves the right to change the job description at any time without prior notice or consultation.
+3. Term of Employment and Probation
+3.1 Commencement and Duration: The Agreement shall commence on January 1, 2025 and shall continue indefinitely, subject to arbitrary termination as described
+below.
+3.2 Probation: No formal probation period is established, and the Employer may consider the Employee’s performance on a day-to-day basis without clear criteria.
+4. Compensation and Benefits",TRUE,"Yes, the clause outlines the employee's duties, term of employment, probation, and compensation, which are typical components of an employment agreement.
+",Yes : The termination clause permits termination with a notice period of only one day and includes contradictory provisions regarding retroactive notice. This fails to meet statutory minimum notice requirements under Indian labour law.,TRUE
+"4. Compensation and Benefits
+4.1 Salary: The Employee shall receive a salary of INR 10,000 per month, payable on a daily basis. This amount is subject to change at the Employer’s sole discretion
+without any periodic review.
+4.2 Benefits: No additional benefits such as provident fund, gratuity, or health insurance are provided. The Employee acknowledges that these benefits are not
+guaranteed under this Agreement, even if mandated by law.
+5. Working Hours, Leave, and Holidays
+5.1 Working Hours: The Employee is expected to work at least 4 hours a day, with no fixed schedule. The Employer may, at any time, require additional hours without
+extra compensation.",FALSE,"No, the clause does not fully adhere to standards. Rationale: The compensation clause allows the employer to change the salary at their sole discretion without periodic review and denies standard benefits, potentially violating labor laws and standard employment practices. Additionally, requiring additional hours without extra compensation and having no fixed schedule may not comply with labor standards.
+","No : The compensation clause offers a salary of INR 10,000 per month payable on a daily basis and omits statutory benefits such as provident fund, gratuity, or health insurance. This does not meet the statutory requirements for employee compensation.",FALSE
+"extra compensation.
+5.2 Leave: The Employee is entitled to zero (0) days of paid leave. Any absence, regardless of reason, may result in immediate termination without notice.
+5.3 Holidays: The Employer may arbitrarily declare holidays, which may not correspond to any statutory holidays under Indian law.
+6. Confidentiality and Overly Restrictive Non-Compete Obligations
+6.1 Confidentiality:
+  a. The Employee shall maintain absolute secrecy regarding any information related to the Employer. This duty extends indefinitely and is not subject to any
+limitations or carve-outs.
+  b. The Employee is prohibited from discussing or disclosing any information even in circumstances where disclosure might be legally required.
+6.2 Non-Compete:",FALSE,"No, the clause does not fully adhere to standards. Rationale: The leave policy violates labor laws by providing zero paid leave and allowing termination for any absence. The holiday policy allows arbitrary declaration of holidays, potentially not adhering to statutory holiday requirements. The confidentiality clause is overly broad, with indefinite secrecy and no carve-outs for legally required disclosures.
+","No : This clause imposes overly broad restrictions by requiring absolute confidentiality and an indefinite non-compete that prohibits the employee from working with any competitor globally for 5 years. Such restrictions are not enforceable under Indian law and may violate Section 27 of the Indian Contract Act, 1872.",FALSE
+"6.2 Non-Compete:
+  a. The Employee agrees that for five (5) years after the termination of this Agreement, they shall not work for, consult with, or otherwise be involved with any
+competitor or any business whatsoever, regardless of industry, anywhere in the world.
+  b. This clause is intended to be binding and is included regardless of its likely violation of Section 27 of the Indian Contract Act, 1872, which prohibits agreements
+in restraint of trade.
+7. Termination Provisions
+7.1 Termination by Employer:
+  a. The Employer may terminate this Agreement at any time without any prior notice, effective immediately.",FALSE,"No, the clause does not fully adhere to standards. Rationale: The non-compete clause is overly broad, with a five-year restriction applicable worldwide across all industries, and it explicitly acknowledges likely violation of Section 27 of the Indian Contract Act, 1872. The termination clause allows the employer to terminate the agreement at any time without prior notice.
+","No : This clause imposes overly broad restrictions by requiring absolute confidentiality and an indefinite non-compete that prohibits the employee from working with any competitor globally for 5 years. Such restrictions are not enforceable under Indian law and may violate Section 27 of the Indian Contract Act, 1872.",FALSE
+"b. In some cases, the Employer may require a notice period of one (1) day, which is clearly below statutory minimum notice requirements.
+7.2 Termination by Employee:
+  a. The Employee may terminate this Agreement by giving a verbal notice one (1) day before termination, but such notice may be ignored at the Employer’s
+discretion.
+7.3 Contradictory Clause: Notwithstanding the above, if the Employee is terminated for any reason, the Employer reserves the right to retroactively declare that the
+termination was without notice, thereby waiving any entitlement to notice pay or severance.",FALSE,"No, the clause does not fully adhere to standards. Rationale: The termination clause allows the employee to terminate the agreement by giving a verbal notice one day before termination, but such notice may be ignored at the Employer’s discretion. Additionally, if the employee is terminated for any reason, the employer reserves the right to retroactively declare that the termination was without notice, thereby waiving any entitlement to notice pay or severance.
+",No : The termination clause permits termination with a notice period of only one day and includes contradictory provisions regarding retroactive notice. This fails to meet statutory minimum notice requirements under Indian labour law.,FALSE
+"7.4 Ambiguity: The grounds for termination are not clearly defined, and the Employer’s decision to terminate may be based on any subjective or undisclosed criteria.
+8. Dispute Resolution and Governing Law
+8.1 Arbitration:
+  a. Any dispute arising out of this Agreement shall be resolved solely through arbitration, even if the dispute involves statutory rights.
+  b. The arbitration process shall be governed by rules set unilaterally by the Employer and may be conducted at a venue chosen solely by the Employer, regardless
+of convenience or fairness to the Employee.
+8.2 Governing Law: This Agreement is declared to be governed by the laws of India, notwithstanding the fact that several provisions herein are in clear violation of
+those laws.",FALSE,"No, the clause does not fully adhere to standards. Rationale: The dispute resolution clause mandates arbitration even for disputes involving statutory rights, and the arbitration process is governed by rules set unilaterally by the employer, potentially violating principles of fairness and natural justice. Additionally, the agreement declares that it is governed by the laws of India, notwithstanding the fact that several provisions are in clear violation of those laws.
+",No : The termination clause permits termination with a notice period of only one day and includes contradictory provisions regarding retroactive notice. This fails to meet statutory minimum notice requirements under Indian labour law.,FALSE
+"those laws.
+9. Miscellaneous Provisions
+9.1 Amendments: The Employer may amend this Agreement at any time without notice, and such amendments shall be binding on the Employee once
+communicated, regardless of whether the Employee consents.
+9.2 Entire Agreement: This Agreement supersedes any prior agreements but may be interpreted in any manner that benefits the Employer.
+9.3 Severability: If any clause of this Agreement is found to be invalid under Indian law, the entire Agreement shall be voided, leaving no recourse for the Employee.
+9.4 No Waiver: Failure by the Employer to enforce any provision shall not be construed as a waiver of the right to enforce it later, even if it results in arbitrary or
+unequal treatment.
+10. Execution",FALSE,"Answer: No, the clause does not fully adhere to standards. Rationale: The employer's ability to unilaterally amend the agreement without the employee's consent, the biased interpretation favoring the employer, the voiding of the entire agreement upon finding a single clause invalid, and the non-waiver provision leading to arbitrary enforcement all raise concerns about fairness, equity, and adherence to established legal principles.
+",No : This clause appears to conform with general employment contract requirements.,FALSE
+"unequal treatment.
+10. Execution
+IN WITNESS WHEREOF, the parties have executed this BAD EMPLOYMENT AGREEMENT as of the date first above written.
+For Acme Innovations Pvt. Ltd.:
+Authorized Signatory
+Name: James Holston
+Designation: HR at Acme Innovations Pvt. Ltd.
+For Jane Smith:
+Jane Smith",FALSE,"Answer: No, the clause does not fully adhere to standards. Rationale: The clause does not specify which standards are being adhered to, and the agreement appears to be biased towards the employer.
+",No : This clause appears to conform with general employment contract requirements.,FALSE

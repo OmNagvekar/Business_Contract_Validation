@@ -92,8 +92,8 @@ class QueryProcessor:
         
         parser = RecursiveCharacterTextSplitter(
             separators=["\n\n", "\n", ". "],
-            chunk_size=1000,       # adjust chunk size as needed
-            chunk_overlap=200      # adjust overlap to retain context between chunks
+            chunk_size=750,       # adjust chunk size as needed
+            chunk_overlap=75      # adjust overlap to retain context between chunks
         )
         self.text_splitter = LangchainNodeParser(lc_splitter=parser)
 
@@ -169,13 +169,17 @@ class QueryProcessor:
             logger.info("Querying clause through LLM")
             query_prompt = CHAT_PROMPT_TEMPLATE.format(history=history,clause=clause)
             response = self.query_engine.query(query_prompt)
+            if response.source_nodes:
+                context = [node.node.text for node in response.source_nodes]
+            else:
+                context = []
             logger.info(f"Response of LLM: {str(response)}")
         except Exception as e:
             logger.error(f"Query failed: {e}. Defaulting response to 'yes'")
             response = "yes"
         result = str(response)
         truth_value = "yes" in result.lower()
-        return clause, result, truth_value
+        return clause, result, truth_value,context
 
     def checking_alignment(self):
         logger.info("Starting document alignment check")
@@ -187,6 +191,7 @@ class QueryProcessor:
         self.results = []
         self.truth_values = []
         self.clauses =[]
+        self.contexts =[]
         logger.info(f"Processing {len(self.chunks)} chunks for alignment")
         for count,chunk in enumerate(tqdm(self.chunks, desc="Evaluating chunks"),start=1):
             if self.stop:
@@ -199,13 +204,14 @@ class QueryProcessor:
             else:
                 history = ""
 
-            clause, result, truth_value = self.query_clause(history,chunk)
+            clause, result, truth_value,context = self.query_clause(history,chunk)
             if result == "Cancelled":
                 logger.info("Cancellation detected. Stopping processing.")
                 break
             self.results.append(result)
             self.truth_values.append(truth_value)
             self.clauses.append(clause)
+            self.contexts.append(context)
             count += 1
             logger.debug(f"Processed chunk {count}: Truth value = {truth_value}")
             logger.info(f"\nclause {clause}\n, result {result}\n, truth_value {truth_value}\n")
@@ -216,7 +222,8 @@ class QueryProcessor:
         return pd.DataFrame({
             "Clause": self.chunks, 
             "Truth_Value": self.truth_values,
-            "Responses": self.results
+            "Responses": self.results,
+            "retrieved_context": self.contexts
         })
 
     def pdf_highlighter(self):

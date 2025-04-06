@@ -3,7 +3,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from ragas.embeddings import LangchainEmbeddingsWrapper
 from langchain_huggingface import HuggingFaceEmbeddings
 import pandas as pd
-from ragas.metrics import LLMContextRecall, Faithfulness, FactualCorrectness,AspectCritic,ResponseRelevancy,SemanticSimilarity,AnswerCorrectness
+from ragas.metrics import  Faithfulness, FactualCorrectness,AspectCritic,ResponseRelevancy,SemanticSimilarity,AnswerCorrectness
 from ragas import evaluate
 from ragas import EvaluationDataset
 import os
@@ -86,7 +86,7 @@ def final_evaluation():
     # Evaluate the dataset using the metric
     results = evaluate(
         dataset=dataset, 
-        metrics=[aspect_metrics,LLMContextRecall(), Faithfulness(), FactualCorrectness(),ResponseRelevancy(),SemanticSimilarity(),AnswerCorrectness()],
+        metrics=[aspect_metrics, Faithfulness(), FactualCorrectness(),ResponseRelevancy(),SemanticSimilarity(),AnswerCorrectness()],
         llm=evaluator_llm,
         embeddings=embed_model,
         run_config=my_run_config,

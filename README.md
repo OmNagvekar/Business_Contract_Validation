@@ -109,8 +109,6 @@ At its core, the project leverages modern machine learning, vector indexing, and
 
 Below is a sample table of evaluation scores based on the contents of `final_results.csv`:
 
-Okay, I can help you with that! Here is the table in Markdown format with the "Context Recall" column removed:
-
 | Clause ID | Business_Contract_Clause_Standard_Evaluation | Faithfulness | Factual Correctness (F1) | Answer Relevancy | Semantic Similarity | Answer Correctness |
 |-----------|----------------------------------------------:|-------------:|-------------------------:|-----------------:|--------------------:|-------------------:|
 | 1         | 1.00                                          | 0.00         | 1.00                     | 0.81             | 0.88                | 0.22               |

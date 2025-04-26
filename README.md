@@ -109,18 +109,20 @@ At its core, the project leverages modern machine learning, vector indexing, and
 
 Below is a sample table of evaluation scores based on the contents of `final_results.csv`:
 
-| Clause ID | Business_Contract_Clause_Standard_Evaluation | Context Recall | Faithfulness | Factual Correctness (F1) | Answer Relevancy | Semantic Similarity | Answer Correctness |
-|-----------|----------------------------------------------:|---------------:|-------------:|-------------------------:|-----------------:|--------------------:|-------------------:|
-| 1         | 1.00                                          | 0              | 0.00         | 1.00                     | 0.81             | 0.88                | 0.22               |
-| 2         | 0.00                                          | 0              | 0.50         | 0.00                     | 0.82             | 0.89                | 0.47               |
-| 3         | 1.00                                          | 0              | 0.00         | 0.00                     | 0.86             | 0.83                | 0.21               |
-| 4         | 0.00                                          | 0              | 0.00         | 0.53                     | 0.84             | 0.89                | 0.57               |
-| 5         | 0.00                                          | 0              | 0.00         | 0.38                     | 0.83             | 0.86                | 0.21               |
-| 6         | 0.00                                          | 0              | 0.00         | 0.80                     | 0.82             | 0.93                | 0.53               |
-| 7         | 0.00                                          | 0              | 0.00         | 0.50                     | 0.85             | 0.91                | 0.64               |
-| 8         | 1.00                                          | 0              | 0.00         | 0.18                     | 0.82             | 0.85                | 0.38               |
-| 9         | 0.00                                          | 0              | 0.00         | 0.00                     | 0.82             | 0.87                | 0.30               |
-| 10        | 1.00                                          | 0              | 0.00         | 0.00                     | 0.83             | 0.90                | 0.53               |
+| Clause ID | Business_Contract_Clause_Standard_Evaluation | Faithfulness | Factual Correctness (F1) | Answer Relevancy | Semantic Similarity | Answer Correctness |
+|-----------|----------------------------------------------:|-------------:|-------------------------:|-----------------:|--------------------:|-------------------:|
+| 1         | 1.00                                          | 0.00         | 1.00                     | 0.81             | 0.88                | 0.22               |
+| 2         | 0.00                                          | 0.50         | 0.00                     | 0.82             | 0.89                | 0.47               |
+| 3         | 1.00                                          | 0.00         | 0.00                     | 0.86             | 0.83                | 0.21               |
+| 4         | 0.00                                          | 0.00         | 0.53                     | 0.84             | 0.89                | 0.57               |
+| 5         | 0.00                                          | 0.00         | 0.38                     | 0.83             | 0.86                | 0.21               |
+| 6         | 0.00                                          | 0.00         | 0.80                     | 0.82             | 0.93                | 0.53               |
+| 7         | 0.00                                          | 0.00         | 0.50                     | 0.85             | 0.91                | 0.64               |
+| 8         | 1.00                                          | 0.00         | 0.18                     | 0.82             | 0.85                | 0.38               |
+| 9         | 0.00                                          | 0.00         | 0.00                     | 0.82             | 0.87                | 0.30               |
+| 10        | 1.00                                          | 0.00         | 0.00                     | 0.83             | 0.90                | 0.53               |
+
+Let me know if you need any other modifications!
 
 *Note: The above values are directly extracted from the sample rows of `final_results.csv`. In practice, the CSV may contain additional rows, and these metrics are computed for each evaluated clause.*
 

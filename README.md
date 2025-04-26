@@ -131,9 +131,6 @@ Let me know if you need any other modifications!
 - **Business_Contract_Clause_Standard_Evaluation**:  
   Measures the LLM’s ability to accurately decide if a clause adheres to legal standards, returning 1 for adherence and 0 otherwise.
 
-- **Context Recall**:  
-  Indicates whether relevant context was successfully recalled during evaluation (0 if not recalled).
-
 - **Faithfulness**:  
   Assesses if the response accurately reflects the clause content without introducing inaccuracies.
 

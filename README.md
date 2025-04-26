@@ -122,7 +122,21 @@ Below is a sample table of evaluation scores based on the contents of `final_res
 | 9         | 0.00                                          | 0.00         | 0.00                     | 0.82             | 0.87                | 0.30               |
 | 10        | 1.00                                          | 0.00         | 0.00                     | 0.83             | 0.90                | 0.53               |
 
-Let me know if you need any other modifications!
+Evaluation Metrics using GPT-4O-mini `test\GPT-4O-mini-evaluation\final_results.xlsx`
+
+| Clause ID | Business_Contract_Clause_Standard_Evaluation | Faithfulness | Factual Correctness (F1) | Answer Relevancy | Semantic Similarity | Answer Correctness |
+|-----------|----------------------------------------------:|-------------:|-------------------------:|-----------------:|--------------------:|-------------------:|
+| 1         | 1.00                                          | 0.00         | 0.33                     | 0.83             | 0.88                | 0.82               |
+| 2         | 1.00                                          | 0.50         | 0.00                     | 0.84             | 0.89                | 0.97               |
+| 3         | 1.00                                          | 0.00         | 0.00                     | 0.84             | 0.83                | 0.71               |
+| 4         | 1.00                                          | 0.00         | 0.55                     | 0.84             | 0.89                | 0.52               |
+| 5         | 0.00                                          | 0.00         | 0.38                     | 0.83             | 0.86                | 0.85               |
+| 6         | 0.00                                          | 0.00         | 0.55                     | 0.84             | 0.93                | 0.45               |
+| 7         | 0.00                                          | 0.00         | 0.29                     | 0.85             | 0.91                | 0.83               |
+| 8         | 1.00                                          | 0.00         | 0.36                     | 0.82             | 0.85                | 0.21               |
+| 9         | 1.00                                          | 0.00         | 0.00                     | 0.82             | 0.87                | 0.43               |
+| 10        | 1.00                                          | 0.00         | 0.00                     | 0.83             | 0.90                | 0.53               |
+
 
 *Note: The above values are directly extracted from the sample rows of `final_results.csv`. In practice, the CSV may contain additional rows, and these metrics are computed for each evaluated clause.*
 
